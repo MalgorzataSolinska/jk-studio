@@ -7,17 +7,21 @@ import { ChakraProvider } from '@chakra-ui/react';
 import { BrowserRouter } from 'react-router-dom';
 import theme from './theme';
 import ScrollToTop from './components/ScrollToTop';
+import i18n from './i18n';
+import { I18nextProvider } from 'react-i18next';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+<I18nextProvider i18n={i18n}>
      <BrowserRouter>
      <ScrollToTop />
     <ChakraProvider theme={theme}>
       <App />
     </ChakraProvider>
     </BrowserRouter>
-  </React.StrictMode>
+    </I18nextProvider>
+
 );
 
 // If you want to start measuring performance in your app, pass a function

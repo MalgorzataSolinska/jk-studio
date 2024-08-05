@@ -1,20 +1,18 @@
 import React from 'react';
-import {
-  Flex,
-  Box,
-  Text,
-  Button,
-  Divider,
-  Image,
-  Skeleton,
-  Stack,
-  Heading,
-  useColorModeValue,
-} from '@chakra-ui/react';
+import { Flex, Box, Text, Button, Image, Skeleton, Stack, Heading, useColorModeValue } from '@chakra-ui/react';
 import HomeHeader from '../components/HomeHeader';
 import { Link as RouterLink } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { useTranslation } from 'react-i18next';
 
 function Home() {
+  const buttonVariants = {
+    hidden: { opacity: 0, scale: 0.9 },
+    visible: { opacity: 1, scale: 1 },
+  };
+  const { ref: button, inView: buttonInView } = useInView({ triggerOnce: true });
+  const { t } = useTranslation();
   return (
     <>
       <HomeHeader />
@@ -32,7 +30,7 @@ function Home() {
             <Stack spacing={{ base: '8', lg: '10' }}>
               <Stack spacing={{ base: '2', lg: '6' }}>
                 <Heading fontWeight='normal' textAlign='center' fontFamily='Savoye' fontSize='40'>
-                  Gładkość ciała i dbanie o Siebie
+                  {t('home.title')}
                 </Heading>
                 <Text textAlign='center' fontSize='md'>
                   {' '}
@@ -40,29 +38,45 @@ function Home() {
                 </Text>
 
                 <Flex direction='column' align='center'>
-                  <Button
-                    as={RouterLink}
-                    to='/about'
-                    bg='#B49CCC'
-                    size='lg'
-                    fontSize='md'
-                    minW='300'
-                    mt={{ base: '3', lg: '5' }}
+                  <motion.div
+                    ref={button}
+                    variants={buttonVariants}
+                    initial='hidden'
+                    animate={buttonInView ? 'visible' : 'hidden'}
+                    transition={{ duration: 1, ease: 'easeInOut' }}
                   >
-                    DOWIEDZ SIĘ WIĘCEJ
-                  </Button>
-                  <Button
-                    as={RouterLink}
-                    to='https://booksy.com/pl-pl/242997_jk-studio_depilacja_8820_krakow#ba_s=sr_1'
-                    target='_blank'
-                    bg='#B49CCC'
-                    size='lg'
-                    fontSize='md'
-                    minW='300'
-                    mt={{ base: '5', lg: '7' }}
+                    <Button
+                      as={RouterLink}
+                      to='/about'
+                      bg='#B49CCC'
+                      size='lg'
+                      fontSize='md'
+                      minW='300'
+                      mt={{ base: '3', lg: '5' }}
+                    >
+                      DOWIEDZ SIĘ WIĘCEJ
+                    </Button>
+                  </motion.div>
+                  <motion.div
+                    ref={button}
+                    variants={buttonVariants}
+                    initial='hidden'
+                    animate={buttonInView ? 'visible' : 'hidden'}
+                    transition={{ duration: 2, ease: 'easeInOut' }}
                   >
-                    ZAREZERWUJ WIZYTĘ
-                  </Button>
+                    <Button
+                      as={RouterLink}
+                      to='https://booksy.com/pl-pl/242997_jk-studio_depilacja_8820_krakow#ba_s=sr_1'
+                      target='_blank'
+                      bg='#B49CCC'
+                      size='lg'
+                      fontSize='md'
+                      minW='300'
+                      mt={{ base: '5', lg: '7' }}
+                    >
+                      ZAREZERWUJ WIZYTĘ
+                    </Button>
+                  </motion.div>
                 </Flex>
               </Stack>
             </Stack>
@@ -88,8 +102,6 @@ function Home() {
           </Flex>
         </Stack>
       </Box>
-
-      <Divider bg={'#b49dcd'} mb='10' />
     </>
   );
 }

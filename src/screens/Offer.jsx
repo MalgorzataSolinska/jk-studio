@@ -1,6 +1,8 @@
 import React from 'react';
-import { Box, Heading, TableContainer, Table, Tbody, Tr, Td, Button, Link, Flex, Divider } from '@chakra-ui/react';
+import { Box, Heading, TableContainer, Table, Tbody,  Td, Divider } from '@chakra-ui/react';
 import Header from '../components/Header';
+import AnimatedTableRow from '../components/AnimatedTableRow'; 
+
 
 function Offer() {
   return (
@@ -12,7 +14,7 @@ function Offer() {
           Cennik
         </Heading>
 
-        <Box mb={10} mr='5' ml='5' mt='5'>
+        <Box mb={10}  mt='5'>
           <Heading as='h2' size='xl' textAlign='center' bg='#b49dcd' color='white' p={4}>
             Depilacja pastą cukrową
           </Heading>
@@ -20,11 +22,14 @@ function Offer() {
           <TableContainer mt={4} >
             <Table variant='striped' size={{ base: 'sm', md: 'md', lg: 'md' }}>
               <Tbody>
-                <Tr>
+                
+                <AnimatedTableRow>
                   <Td colSpan={3} textAlign='center' fontWeight='bold' fontSize='xl'>
                     KOBIETA
+                    
                   </Td>
-                </Tr>
+                  </AnimatedTableRow>
+               
                 {[
                   { service: 'Wąsik', time: '10 min', price: '20 PLN' },
                   { service: 'Pachy', time: '20 min', price: '30 PLN' },
@@ -34,7 +39,7 @@ function Offer() {
                   { service: 'Łydki', time: '40 min', price: '70 PLN' },
                   { service: 'Całe nogi', time: '90 min', price: '150 PLN' },
                 ].map((item, index) => (
-                  <Tr key={index}>
+                  <AnimatedTableRow key={index}>
                     <Td textAlign='left' fontSize='md'>
                       {item.service}
                     </Td>
@@ -44,15 +49,15 @@ function Offer() {
                     <Td textAlign='right' fontSize='md'>
                       {item.price}
                     </Td>
-                  </Tr>
+                    </AnimatedTableRow>
                 ))}
                 <Divider bg={'#b49dcd'} mb='10' />
 
-                <Tr>
+                <AnimatedTableRow>
                   <Td colSpan={3} textAlign='center' fontWeight='bold' fontSize='xl'>
                     MĘŻCZYZNA
                   </Td>
-                </Tr>
+                  </AnimatedTableRow>
                 {[
                   { service: 'Pachy', time: '40 min', price: '30 PLN' },
                   { service: 'Klatka piersiowa', time: '30 min', price: '70+ PLN' },
@@ -62,7 +67,7 @@ function Offer() {
                   { service: 'Uda', time: '60 min', price: '100 PLN' },
                   { service: 'Całe nogi', time: '90 min', price: '150 PLN' },
                 ].map((item, index) => (
-                  <Tr key={index}>
+                  <AnimatedTableRow key={index}>
                     <Td textAlign='left' fontSize='md'>
                       {item.service}
                     </Td>
@@ -72,7 +77,7 @@ function Offer() {
                     <Td textAlign='right' fontSize='md'>
                       {item.price}
                     </Td>
-                  </Tr>
+                    </AnimatedTableRow>
                 ))}
               </Tbody>
             </Table>
@@ -87,11 +92,11 @@ function Offer() {
           <TableContainer mt={4}>
             <Table variant='striped' size={{ base: 'sm', md: 'md', lg: 'md' }}>
               <Tbody>
-                <Tr>
+              <AnimatedTableRow>
                   <Td textAlign='left'>Peeling całego ciała</Td>
                   <Td textAlign='right'>60 min</Td>
                   <Td textAlign='right'>200 PLN</Td>
-                </Tr>
+                  </AnimatedTableRow>
               </Tbody>
             </Table>
           </TableContainer>
