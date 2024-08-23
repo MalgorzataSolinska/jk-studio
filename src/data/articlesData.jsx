@@ -2,9 +2,10 @@ const articles = [
   {
     id: 1,
     title: 'Jak przygotować się do zabiegu ',
-    date: '2024-08-01',
+    date: '2024-07-27',
     image: '/images/Jana-kosmetyki.png',
     content: 'Jak przygotować się do zabiegu',
+   
   },
   {
     id: 2,
@@ -15,7 +16,7 @@ const articles = [
   },
   {
     id: 3,
-    title: 'Produkty Alexandria',
+    title: 'Produkty Alexandria Professional',
     date: '2024-08-02',
     image: '/images/kosmetyki.png',
     content: 'Dlaczego pasta cukrowa.',

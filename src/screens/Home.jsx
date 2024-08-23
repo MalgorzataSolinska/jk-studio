@@ -34,7 +34,7 @@ function Home() {
                 </Heading>
                 <Text textAlign='center' fontSize='md'>
                   {' '}
-                  Skorzystaj z naszych zabiegów depilacji cukrowej i ciesz się gładką skórą{' '}
+                  {t('home.description')}{' '}
                 </Text>
 
                 <Flex direction='column' align='center'>
@@ -54,7 +54,7 @@ function Home() {
                       minW='300'
                       mt={{ base: '3', lg: '5' }}
                     >
-                      DOWIEDZ SIĘ WIĘCEJ
+                      {t('home.knowMoreButton')}
                     </Button>
                   </motion.div>
                   <motion.div
@@ -74,7 +74,7 @@ function Home() {
                       minW='300'
                       mt={{ base: '5', lg: '7' }}
                     >
-                      ZAREZERWUJ WIZYTĘ
+                      {t('home.reservationButton')}
                     </Button>
                   </motion.div>
                 </Flex>

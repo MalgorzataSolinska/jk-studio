@@ -1,7 +1,69 @@
 {
-    "about": "About us", 
-    "offer": "Offer",
-    "gallery": "Gallery", 
-    "contact": "Contact",
-    "slogan": "Smooth body and self-care"
+  "homeHeader": {
+    "title": "Professional Sugaring Hair Removal"
+  },
+  "header":{
+    "reservation.default":"RESERVATIONS", 
+    "reservation.md":"RESERVATIONS", 
+    "about":"About us", 
+    "offer":"Offer", 
+    "gallery":"Gallery", 
+    "blog":"Blog", 
+    "contact":"Contact"
+},
+  "home": {
+    "title": "Smooth Body and Self-Care",
+    "description": "Discover the benefits of our sugaring hair removal services for flawlessly smooth skin",
+    "knowMoreButton": "LEARN MORE",
+    "reservationButton": "BOOK AN APPOINTMENT"
+  },
+
+  "contactInformation": {
+    "salon": "SALON",
+    "streetName": "Bałtycka 2",
+    "cityName": "31-214 Kraków",
+    "openingHours": "Mon-Sun: 10:00 - 21:00",
+    "contact": "CONTACT",
+    "phoneNumber": "+48 502 765 640",
+    "emailAddress": "depilacja.jkstudio@gmail.com",
+    "reservations": "Reservations",
+    "followUs": "FOLLOW US"
+  },
+
+  "about": {
+    "aboutUs": {
+      "aboutUs": "About Us",
+      "about_us_part1": "JK Studio was established with individuals who value comfort and professionalism in mind. Our staff is fully dedicated to ensuring complete customer satisfaction through perfect service and a friendly atmosphere. Hygiene and safety during each treatment are our top priorities.",
+      "about_us_part2": "The salon offers sugaring hair removal, a very effective method for removing hair from the entire body. The treatment is safe and suitable for all skin types—even sensitive skin.",
+      "about_us_part3": "In our salon, we provide full understanding for our clients. Want to bring your child? No problem—we have a play area with building blocks and coloring books. Or perhaps you have a pet with you? You are warmly welcome!"
+    },
+    "team": {
+      "team": "Team",
+      "ownerName": "JANA",
+      "ownerTitle": "Salon Owner",
+      "ownerDescription": "Praised by clients for the high quality of services provided. Gained experience in sugaring hair removal since 2015 and continually improves her skills. A perfectionist at work, fully focused on what she does. Personally, a happy mother of a wonderful girl. Always energetic and smiling."
+    }
+},
+  
+  
+    "offer": { 
+      "pricing": "Price List", 
+      "sugaring": "Sugaring Hair Removal",
+      "woman": "WOMAN",
+      "man": "MAN", 
+      "upperLip": "Upper lip", 
+      "armpits": "Armpits", 
+      "arms": "Arms", 
+      "bikiniLine": "Bikini Line", 
+      "brazilianBikini": "Brazilian Bikini",
+      "calves": "Calves", 
+      "legs": "Full Legs",
+      "chest": "Chest", 
+      "back": "Back", 
+      "bikini": "Bikini", 
+      "thighs": "Thighs", 
+      "scrub": "Scrub", 
+      "fullBodyScrub": "Full-Body Scrub"
+    }
+  
 }

@@ -2,8 +2,10 @@ import React from 'react';
 import { Flex, Stack, Text, Button, useBreakpointValue } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import LanguageSelector from './LanguageSelector';
+import { useTranslation } from 'react-i18next';
 
 function Header() {
+  const { t } = useTranslation();
   return (
     <>
       <Flex mt='1' mr='1' justifyContent='right'>
@@ -42,7 +44,7 @@ function Header() {
             color='white'
             fontWeight='bold'
           >
-            {useBreakpointValue({ base: 'REZERWACJA', md: 'ZAREZERWUJ WIZYTĘ' })}
+            {useBreakpointValue({ base: t('header.reservation.default'), md: t('header.reservation.md')})}
           </Button>
         </Flex>
       </Flex>
@@ -56,11 +58,11 @@ function Header() {
         boxShadow='md'
       >
         <Stack direction='row' spacing={4} mr={5} ml={5}>
-          <Link to='/about'>O nas</Link>
-          <Link to='/offer'>Oferta</Link>
-          <Link to='/gallery'>Galeria</Link>
-          <Link to='/blog'>Blog</Link>
-          <Link to='/contact'>Kontakt</Link>
+          <Link to='/about'>{t('header.about')}</Link>
+          <Link to='/offer'>{t('header.offer')}</Link>
+          <Link to='/gallery'>{t('header.gallery')}</Link>
+          <Link to='/blog'>{t('header.blog')}</Link>
+          <Link to='/contact'>{t('header.contact')}</Link>
         </Stack>
       </Flex>
     </>

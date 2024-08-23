@@ -28,7 +28,7 @@ function About() {
       <Header />
       <Box id='about' p={5}>
         <Heading as='h2' size='xl' mb='5' mt='15' ml='5'>
-          {t('about')}
+          {t('about.aboutUs.aboutUs')}
         </Heading>
         <Flex direction={{ base: 'column', md: 'row', lg: 'row' }}>
           <motion.div
@@ -39,9 +39,9 @@ function About() {
             transition={{ duration: 1 }}
           >
             <Stack mt='5' mr='5' mb='5' ml='5' textAlign='justify'>
-              <Text mb='5'>{t('about_us_part1')}</Text>
-              <Text mb='5'>{t('about_us_part2')}</Text>
-              <Text mb='5'>{t('about_us_part3')}</Text>
+              <Text mb='5'>{t('about.aboutUs.about_us_part1')}</Text>
+              <Text mb='5'>{t('about.aboutUs.about_us_part2')}</Text>
+              <Text mb='5'>{t('about.aboutUs.about_us_part3')}</Text>
             </Stack>
           </motion.div>
           <motion.div
@@ -66,7 +66,7 @@ function About() {
           </motion.div>
         </Flex>
         <Heading as='h2' size='xl' mb='5' mt='55' ml='5'>
-          Personel
+          {t("about.team.team")}
         </Heading>
         <Flex direction={{ base: 'column', md: 'row', lg: 'row' }}>
           <motion.div
@@ -78,15 +78,13 @@ function About() {
           >
             <Stack mt='5' mr='5' mb='5' ml='5' textAlign='justify'>
               <Text mb='5' fontSize='xl' fontWeight='bold'>
-                JANA
+              {t("about.team.ownerName")}
               </Text>
               <Text mb='5' fontWeight='bold'>
-                Właścicielka salonu
+              {t("about.team.ownerTitle")}
               </Text>
               <Text mb='5'>
-                Doceniana przez Klientów za wysoką jakość wykonywanych usług. Doświadczenie w depilacji pastą cukrową
-                zdobywa od 2015 roku i ciągle podnosi swoje umiejętności. W pracy - perfekcjonistka maksymalnie skupiona
-                na tym co robi. Prywatnie - szczęśliwa Mama cudownej dziewczynki. Zawsze pełna energii i uśmiechnięta.
+              {t("about.team.ownerDescription")}
               </Text>
             </Stack>
           </motion.div>

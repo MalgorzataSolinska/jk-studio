@@ -1,8 +1,11 @@
 import React from 'react';
 import { Text, Flex } from '@chakra-ui/react';
 import LanguageSelector from './LanguageSelector';
+import { useTranslation } from 'react-i18next';
+
 
 function HomeHeader() {
+  const { t } = useTranslation();
   return (
     <>
       <Flex mt='1' mr='1' justifyContent='right'>
@@ -28,7 +31,7 @@ function HomeHeader() {
           color='gray.700'
           textAlign='center'
         >
-          Profesjonalna depilacja pastą cukrową
+          {t('homeHeader.title')}
         </Text>
       </Flex>
     </>
