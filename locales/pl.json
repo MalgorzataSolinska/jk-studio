@@ -1,0 +1,64 @@
+{
+  "homeHeader": {
+    "title": "Profesjonalna depilacja pastą cukrową"
+  },
+  "header": {
+    "reservation.default": "REZERWACJA",
+    "reservation.md": "ZAREZERWUJ WIZYTĘ",
+    "about": "O nas",
+    "offer": "Oferta",
+    "gallery": "Galeria",
+    "blog": "Blog",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "title": "Gładkość ciała i dbanie o siebie",
+    "description": "Skorzystaj z naszych zabiegów depilacji cukrowej i ciesz się gładką skórą",
+    "knowMoreButton": "DOWIEDZ SIĘ WIĘCEJ",
+    "reservationButton": "ZAREZERWUJ WIZYTĘ"
+  },
+  "contactInformation": {
+    "salon": "SALON",
+    "streetName": "ul. Bałtycka 2",
+    "cityName": "31-214 Kraków",
+    "openingHours": "Pn-Nd: 10:00 - 21:00",
+    "contact": "KONTAKT",
+    "phoneNumber": "+48 502 765 640",
+    "emailAddress": "depilacja.jkstudio@gmail.com",
+    "reservations": " Rezerwacje",
+    "followUs": "ŚLEDŹ NAS"
+  },
+  "about": {
+    "aboutUs": {
+      "aboutUs": "O nas",
+      "about_us_part1": "Gabinet JK Studio powstał z myślą o osobach ceniących komfort i profesjonalizm. Nasz personel z pełnym zaangażowaniem stara się zapewnić wszystkim klientom pełną satysfakcję poprzez perfekcyjną obsługę i przyjazną atmosferę. Priorytet stanowi higiena i bezpieczeństwo podczas każdego zabiegu.",
+      "about_us_part2": "Salon oferuje depilację pastą cukrową, która jest bardzo skuteczną metodą usuwania owłosienia na całym ciele. Zabieg jest bezpieczny i sprawdza się w przypadku każdego rodzaju skóry - nawet wrażliwej.",
+      "about_us_part3": "W naszym salonie zapewniamy pełne zrozumienie dla naszych klientów. Chcesz przyjść z dzieckiem? To żaden problem — dysponujemy kącikiem zabaw z klockami i kolorowankami. A może masz przy sobie pupila? Serdecznie zapraszamy!"
+    },
+    "team": {
+      "team": "Personel",
+      "ownerName": "JANA",
+      "ownerTitle": "Właścicielka salonu",
+      "ownerDescription": "Doceniana przez Klientów za wysoką jakość wykonywanych usług. Doświadczenie w depilacji pastą cukrową zdobywa od 2015 roku i ciągle podnosi swoje umiejętności. W pracy - perfekcjonistka maksymalnie skupiona na tym co robi. Prywatnie - szczęśliwa Mama cudownej dziewczynki. Zawsze pełna energii i uśmiechnięta."
+    }
+  },
+  "offer": {
+    "pricing": "Cennik",
+    "sugaring": "Depilacja pastą cukrową",
+    "woman": "KOBIETA",
+    "man": "MĘŻCZYZNA",
+    "upperLip": "Wąsik",
+    "armpits": "Pachy",
+    "arms": "Ręce",
+    "bikiniLine": "Linia bikini",
+    "brazilianBikini": "Bikini brazylijskie",
+    "calves": "Łydki",
+    "legs": "Całe nogi",
+    "chest": "Klatka piersiowa",
+    "back": "Plecy",
+    "bikini": "Bikini",
+    "thighs": "Uda",
+    "scrub": "Peeling",
+    "fullBodyScrub": "Peeling całego ciała"
+  }
+}
