@@ -13,14 +13,14 @@ i18n
     lng: 'pl',
     debug: true,
     detection: {
-        order: ['path', 'cookie', 'htmlTag', 'localStorage', 'subdomain'],
-        caches: ['cookie']
-      },
+      order: ['path', 'cookie', 'htmlTag', 'localStorage', 'subdomain'],
+      caches: ['cookie'],
+    },
     interpolation: {
       escapeValue: false, // React already does escaping
     },
     backend: {
-      loadPath: '/locales/{{lng}}.json',
+      loadPath: '/jk-studio/locales/{{lng}}.json',
     },
   });
 
