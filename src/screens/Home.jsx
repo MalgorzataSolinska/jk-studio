@@ -47,7 +47,7 @@ function Home() {
                   >
                     <Button
                       as={RouterLink}
-                      to='/about'
+                      to='/jk-studio/about'
                       bg='#B49CCC'
                       size='lg'
                       fontSize='md'
@@ -83,7 +83,7 @@ function Home() {
           </Box>
           <Flex flex='1' overflow='hidden'>
             <Image
-              src='../images/pastacukrowa.png'
+              src='../jk-studio/images/pastacukrowa.png'
               alt='Pasta Cukrowa'
               fallback={<Skeleton />}
               maxH='450px'
@@ -93,7 +93,7 @@ function Home() {
             />
             <Image
               display={{ base: 'none', sm: 'initial' }}
-              src='../images/depilacja.png'
+              src='../jk-studio/images/depilacja.png'
               alt='Depilacja'
               fallback={<Skeleton />}
               maxH='450px'

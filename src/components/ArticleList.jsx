@@ -16,7 +16,7 @@ const ArticleList = () => {
           .map((article) => (
             <MotionBox
               as={RouterLink}
-              to={`/article/${article.id}`}
+              to={`/jk-studio/article/${article.id}`}
               key={article.id}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -37,7 +37,7 @@ const ArticleList = () => {
                   </Link>
                 </Box>
               </Flex>
-              <Heading mt='10' fontSize='xl' textAlign='center' >
+              <Heading mt='10' fontSize='xl' textAlign='center'>
                 {article.title}
               </Heading>
               <Divider mt='5'></Divider>

@@ -14,7 +14,7 @@ function Header() {
       </Flex>
       <Flex justify='space-between' p={4} bg='white' boxShadow='md'>
         <Flex>
-          <Link as={Link} to='/'>
+          <Link as={Link} to='/jk-studio/'>
             <Text
               fontFamily='Broadway'
               fontWeight='medium'
@@ -58,11 +58,11 @@ function Header() {
         boxShadow='md'
       >
         <Stack direction='row' spacing={4} mr={5} ml={5}>
-          <Link to='/about'>{t('header.about')}</Link>
-          <Link to='/offer'>{t('header.offer')}</Link>
-          <Link to='/gallery'>{t('header.gallery')}</Link>
-          <Link to='/blog'>{t('header.blog')}</Link>
-          <Link to='/contact'>{t('header.contact')}</Link>
+          <Link to='/jk-studio/about'>{t('header.about')}</Link>
+          <Link to='/jk-studio/offer'>{t('header.offer')}</Link>
+          <Link to='/jk-studio/gallery'>{t('header.gallery')}</Link>
+          <Link to='/jk-studio/blog'>{t('header.blog')}</Link>
+          <Link to='/jk-studio/contact'>{t('header.contact')}</Link>
         </Stack>
       </Flex>
     </>

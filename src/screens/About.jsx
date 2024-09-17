@@ -52,7 +52,7 @@ function About() {
             transition={{ duration: 1 }}
           >
             <Image
-              src='../images/gabinet.png'
+              src='../jk-studio/images/gabinet.png'
               alt='Gabinet'
               fallback={<Skeleton />}
               maxH='500px'
@@ -96,7 +96,7 @@ function About() {
             transition={{ duration: 2 }}
           >
             <Image
-              src='../images/Jana-właścicielka.png'
+              src='../jk-studio/images/Jana-właścicielka.png'
               alt='Gabinet'
               fallback={<Skeleton />}
               maxH='500px'

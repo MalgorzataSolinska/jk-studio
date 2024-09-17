@@ -18,20 +18,20 @@ const theme = extendTheme({
       '@font-face': [
         {
           fontFamily: 'Broadway',
-          src: `url('/fonts/Broadway.ttf') format('truetype')`,
+          src: `url('/jk-studio/fonts/Broadway.ttf') format('truetype')`,
           fontWeight: 'normal',
           fontStyle: 'normal',
         },
         {
           fontFamily: 'Savoye',
-          src: `url('/fonts/savoyeletplain.ttf') format('truetype')`,
+          src: `url('/jk-studio/fonts/savoyeletplain.ttf') format('truetype')`,
           fontWeight: 'normal',
           fontStyle: 'normal',
         },
         {
          
           fontFamily: 'Comfortaa',
-          src: `url('/fonts/Comfortaa-VariableFont_wght.ttf') format('truetype')`,
+          src: `url('/jk-studio/fonts/Comfortaa-VariableFont_wght.ttf') format('truetype')`,
           fontWeight: 'normal',
           fontStyle: 'normal',
           

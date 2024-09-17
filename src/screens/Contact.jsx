@@ -37,7 +37,7 @@ function Contact() {
             >
               <Image
                 borderRadius='md'
-                src='../images/mapa.png'
+                src='../jk-studio/images/mapa.png'
                 alt='Mapa'
                 fallback={<Skeleton />}
                 objectFit='cover'
