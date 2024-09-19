@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Page Not Found</title>
+    <script type="text/javascript">
+      // Ścieżka bazowa repozytorium GitHub Pages
+      const repoName = '/jk-studio';
+
+      // Funkcja przekierowująca
+      const redirect = () => {
+        // Bierzemy bieżącą ścieżkę URL
+        const currentUrl = window.location.pathname;
+
+        // Jeśli nie jesteśmy jeszcze w ścieżce repozytorium
+        if (!currentUrl.startsWith(repoName)) {
+          // Przekierowujemy użytkownika do poprawnej ścieżki z fragmentem routingu Reacta
+          window.location.replace(repoName + '#' + currentUrl);
+        }
+      };
+
+      // Wywołanie przekierowania
+      redirect();
+    </script>
+  </head>
+  <body>
+    <h1>404 - Page Not Found</h1>
+    <p>Redirecting...</p>
+  </body>
+</html>
