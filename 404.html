@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <title>Page Not Found</title>
     <script type="text/javascript">
-const repoName = '/jk-studio';
-const fullPath = window.location.pathname; 
-const currentPath = fullPath.replace(repoName, '');
+      const fullPath = window.location.pathname; // Zwraca pełną ścieżkę, np. /jk-studio/contact
+      const currentPath = fullPath; // Możesz użyć tej samej ścieżki, ponieważ nie potrzebujemy repoName
+
+      // Przekierowanie do index.html z oryginalną ścieżką
+      window.location.replace(currentPath); // Przekierowuje do tej samej ścieżki
     </script>
   </head>
   <body>
