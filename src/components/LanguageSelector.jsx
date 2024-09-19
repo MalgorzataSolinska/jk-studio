@@ -26,7 +26,13 @@ const LanguageSelector = () => {
         <Flag
           code={flags.find((flag) => flag.lng === i18n.language)?.code}
           alt={i18n.language}
-          style={{ width: '24px', height: '16px', border: '1px solid gray', borderRadius: '2px' }} // Dostosuj rozmiar flagi
+          style={{
+            width: '24px',
+            height: '16px',
+            border: '1px solid gray',
+            borderRadius: '2px',
+            ml: '20px',
+          }} // Dostosuj rozmiar flagi
         />
       </Button>
       <Collapse in={isOpen}>
@@ -38,7 +44,13 @@ const LanguageSelector = () => {
                 <Flag
                   code={flag.code}
                   alt={flag.alt}
-                  style={{ width: '24px', height: '16px', border: '1px solid gray', borderRadius: '2px' }}
+                  style={{
+                    width: '24px',
+                    height: '16px',
+                    border: '1px solid gray',
+                    borderRadius: '2px',
+                    ml: '20px',
+                  }}
                 />
               </Button>
             ))}
