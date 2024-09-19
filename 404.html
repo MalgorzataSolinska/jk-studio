@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <title>Page Not Found</title>
     <script type="text/javascript">
-      const repoName = '/jk-studio'; // Nazwa repozytorium na GitHub Pages
-
-      // Przekierowanie do index.html z zachowaniem ścieżki
-      window.location.replace(repoName);
+const repoName = '/jk-studio';
+const fullPath = window.location.pathname; 
+const currentPath = fullPath.replace(repoName, '');
     </script>
   </head>
   <body>
