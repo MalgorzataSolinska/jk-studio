@@ -1,15 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page Not Found</title>
-    <script>
-      // Przekierowanie do index.html po załadowaniu strony
-      window.location.replace('/index.html');
+    <script type="text/javascript">
+      const redirect = () => {
+        const pathname = window.location.pathname;
+
+        // Sprawdź, czy przekierowanie już miało miejsce
+        if (!pathname.includes('/jk-studio')) {
+          // Jeśli nie ma "jk-studio" w ścieżce, przekieruj z odpowiednią bazą
+          window.location.replace('/jk-studio' + '#' + pathname);
+        }
+      };
+
+      // Uruchom przekierowanie
+      redirect();
     </script>
   </head>
   <body>
-    <p>If you are not redirected automatically, follow this <a href="/jk-studio/index.html">link</a>.</p>
+    <h1>404 - Page Not Found</h1>
+    <p>Redirecting...</p>
   </body>
 </html>
