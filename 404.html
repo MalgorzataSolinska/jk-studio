@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <title>Page Not Found</title>
     <script type="text/javascript">
-      // Przekierowanie do index.html
-      window.location.replace('/jk-studio/index.html#' + window.location.pathname);
+      // Przekierowanie do index.html z zachowaniem hash
+      const currentPath = window.location.pathname.replace('/jk-studio', '');
+      window.location.replace('/jk-studio/index.html#' + currentPath);
     </script>
   </head>
   <body>
