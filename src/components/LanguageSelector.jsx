@@ -31,12 +31,12 @@ const LanguageSelector = () => {
             height: '16px',
             border: '1px solid gray',
             borderRadius: '2px',
-            margin:'20px',
+            margin:'20px 25px',
           }} 
         />
       </Button>
       <Collapse in={isOpen}>
-        <VStack spacing={1} position='absolute' top='100%' left='0' zIndex='1' bg='white' p={3} borderRadius='md' boxShadow='md'>
+        <VStack spacing={1} position='absolute' top='100%' left='0' zIndex='1' bg='white' p={1} borderRadius='md' boxShadow='md'>
           {flags
             .filter((flag) => flag.lng !== i18n.language) 
             .map((flag) => (
@@ -49,7 +49,7 @@ const LanguageSelector = () => {
                     height: '16px',
                     border: '1px solid gray',
                     borderRadius: '2px',
-                    margin:'20px',
+                    margin:' 13px 20px',
                   }}
                 />
               </Button>
