@@ -1,18 +1,28 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-
 import Header from '../components/Header';
-import { Box, Heading, Image, Skeleton } from '@chakra-ui/react';
+import { Box, Heading, Image, Skeleton, Link } from '@chakra-ui/react';
 import ContactInformation from '../components/ContactInformation';
-
-import { Link } from '@chakra-ui/react';
 
 function Contact() {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
+
+  const [showText, setShowText] = useState(false);
+
+  useEffect(() => {
+    if (inView) {
+      const timer = setTimeout(() => {
+        setShowText(true);
+      }, 1000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [inView]);
+
   return (
     <>
       <Header />
@@ -24,7 +34,7 @@ function Contact() {
       <Box ml='5' mt='5' mr='5'>
         <ContactInformation />
       </Box>
-      <Box p={{ base: '10', md: '10' }}>
+      <Box p={{ base: '10', md: '10' }} position='relative'>
         <Link
           href='https://www.google.com/maps/place/JK+Studio/@50.0914824,19.942152,18z/data=!4m6!3m5!1s0x47165b6b8d9ee493:0xc5f1d1535048859!8m2!3d50.0917405!4d19.9432034!16s%2Fg%2F11w2wdy_4m?entry=ttu'
           target='_blank'
@@ -37,7 +47,7 @@ function Contact() {
             >
               <Image
                 borderRadius='md'
-                src='../jk-studio/images/mapa.png'
+                src='../images/mapa.png'
                 alt='Mapa'
                 fallback={<Skeleton />}
                 objectFit='cover'
@@ -45,6 +55,11 @@ function Contact() {
                 width='100%'
               />
             </motion.div>
+            {showText && (
+              <Box position='absolute' top='50px' left='50px' bg='white' p={2} borderRadius='md' boxShadow='md'>
+                Kliknij, aby przejść do mapy
+              </Box>
+            )}
           </div>
         </Link>
       </Box>
