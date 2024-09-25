@@ -16,7 +16,7 @@ const ArticleList = () => {
           .map((article) => (
             <MotionBox
               as={RouterLink}
-              to={`/jk-studio/article/${article.id}`}
+              to={`/article/${article.id}`}
               key={article.id}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

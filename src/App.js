@@ -14,13 +14,13 @@ function App() {
     <div>
       <main>
         <Routes>
-          <Route path='/jk-studio/' element={<Home />} />
-          <Route path='/jk-studio/about' element={<About />} />
-          <Route path='/jk-studio/offer' element={<Offer />} />
-          <Route path='/jk-studio/blog' element={<Blog />} />
-          <Route path='/jk-studio/gallery' element={<Gallery />} />
-          <Route path='/jk-studio/contact' element={<Contact />} />
-          <Route path='/jk-studio/article/:id' element={<Article />} />
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/offer' element={<Offer />} />
+          <Route path='/blog' element={<Blog />} />
+          <Route path='/gallery' element={<Gallery />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/article/:id' element={<Article />} />
         </Routes>
       </main>
       <Footer />

@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ChakraProvider } from '@chakra-ui/react';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import theme from './theme';
 import ScrollToTop from './components/ScrollToTop';
 import i18n from './i18n';
@@ -13,12 +13,12 @@ import { I18nextProvider } from 'react-i18next';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <I18nextProvider i18n={i18n}>
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
       <ChakraProvider theme={theme}>
         <App />
       </ChakraProvider>
-    </BrowserRouter>
+    </HashRouter>
   </I18nextProvider>
 );
 

@@ -47,7 +47,7 @@ function Home() {
                   >
                     <Button
                       as={RouterLink}
-                      to='/jk-studio/about'
+                      to='/about'
                       bg='#B49CCC'
                       size='lg'
                       fontSize='md'
