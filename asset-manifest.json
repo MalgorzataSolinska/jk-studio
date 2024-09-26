@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/www.wearnature.pl/static/css/main.1a2c0c1a.css",
-    "main.js": "/www.wearnature.pl/static/js/main.e6b4a8d8.js",
-    "static/js/453.32bf14e0.chunk.js": "/www.wearnature.pl/static/js/453.32bf14e0.chunk.js",
-    "index.html": "/www.wearnature.pl/index.html",
-    "static/media/getFetch.cjs": "/www.wearnature.pl/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
-    "main.1a2c0c1a.css.map": "/www.wearnature.pl/static/css/main.1a2c0c1a.css.map",
-    "main.e6b4a8d8.js.map": "/www.wearnature.pl/static/js/main.e6b4a8d8.js.map",
-    "453.32bf14e0.chunk.js.map": "/www.wearnature.pl/static/js/453.32bf14e0.chunk.js.map"
+    "main.css": "/static/css/main.1a2c0c1a.css",
+    "main.js": "/static/js/main.bd264020.js",
+    "static/js/453.32bf14e0.chunk.js": "/static/js/453.32bf14e0.chunk.js",
+    "index.html": "/index.html",
+    "static/media/getFetch.cjs": "/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
+    "main.1a2c0c1a.css.map": "/static/css/main.1a2c0c1a.css.map",
+    "main.bd264020.js.map": "/static/js/main.bd264020.js.map",
+    "453.32bf14e0.chunk.js.map": "/static/js/453.32bf14e0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1a2c0c1a.css",
-    "static/js/main.e6b4a8d8.js"
+    "static/js/main.bd264020.js"
   ]
 }
