@@ -20,7 +20,7 @@ i18n
       escapeValue: false, // React already does escaping
     },
     backend: {
-      loadPath: '/jk-studio/locales/{{lng}}.json',
+      loadPath: '/locales/{{lng}}.json',
     },
   });
 

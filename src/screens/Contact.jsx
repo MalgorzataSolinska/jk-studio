@@ -52,7 +52,7 @@ function Contact() {
                 fallback={<Skeleton />}
                 objectFit='cover'
                 maxH={{ base: 'auto', md: '700' }}
-                width='100%'
+                width={{ md: '100%', lg: '80%' }}
               />
             </motion.div>
             {showText && (

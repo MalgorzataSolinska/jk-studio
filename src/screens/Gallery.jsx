@@ -8,21 +8,21 @@ import { useState } from 'react';
 
 
 const images = [
-  { src: '/jk-studio/images/Jana-kosmetyki.png', category: 'kosmetyki' },
-  { src: '/jk-studio/images/pastacukrowa.png', category: 'kosmetyki' },
-  { src: '/jk-studio/images/pasta-cukrowa.png', category: 'kosmetyki' },
-  { src: '/jk-studio/images/kosmetyki.png', category: 'kosmetyki' },
-  { src: '/jk-studio/images/pastacukrowa2.png', category: 'kosmetyki' },
-  { src: '/jk-studio/images/pasta.cukrowa.png', category: 'kosmetyki' },
-  { src: '/jk-studio/images/kosmetyki2.png', category: 'kosmetyki' },
-  { src: '/jk-studio/images/gabinet.png', category: 'kosmetyki' },
-  { src: '/jk-studio/images/depilacja.png', category: 'depilacja' },
-  { src: '/jk-studio/images/depilacja-Jana.png', category: 'depilacja' },
-  { src: '/jk-studio/images/talk.png', category: 'depilacja' },
-  { src: '/jk-studio/images/depilacja-reka.png', category: 'depilacja' },
-  { src: '/jk-studio/images/rezultatydepilacji.png', category: 'depilacja' },
-  { src: '/jk-studio/images/rezultatydepilacji2.png', category: 'depilacja' },
-  { src: '/jk-studio/images/Jana-certyfikaty.png', category: 'depilacja' },
+  { src: '/images/Jana-kosmetyki.png', category: 'kosmetyki' },
+  { src: '/images/pastacukrowa.png', category: 'kosmetyki' },
+  { src: '/images/pasta-cukrowa.png', category: 'kosmetyki' },
+  { src: '/images/kosmetyki.png', category: 'kosmetyki' },
+  { src: '/images/pastacukrowa2.png', category: 'kosmetyki' },
+  { src: '/images/pasta.cukrowa.png', category: 'kosmetyki' },
+  { src: '/images/kosmetyki2.png', category: 'kosmetyki' },
+  { src: '/images/gabinet.png', category: 'kosmetyki' },
+  { src: '/images/depilacja.png', category: 'depilacja' },
+  { src: '/images/depilacja-Jana.png', category: 'depilacja' },
+  { src: '/images/talk.png', category: 'depilacja' },
+  { src: '/images/depilacja-reka.png', category: 'depilacja' },
+  { src: '/images/rezultatydepilacji.png', category: 'depilacja' },
+  { src: '/images/rezultatydepilacji2.png', category: 'depilacja' },
+  { src: '/images/Jana-certyfikaty.png', category: 'depilacja' },
 ];
 
 function Gallery() {

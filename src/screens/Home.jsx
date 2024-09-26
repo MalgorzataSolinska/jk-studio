@@ -83,7 +83,7 @@ function Home() {
           </Box>
           <Flex flex='1' overflow='hidden'>
             <Image
-              src='../jk-studio/images/pastacukrowa.png'
+              src='../images/pastacukrowa.png'
               alt='Pasta Cukrowa'
               fallback={<Skeleton />}
               maxH='450px'
@@ -93,7 +93,7 @@ function Home() {
             />
             <Image
               display={{ base: 'none', sm: 'initial' }}
-              src='../jk-studio/images/depilacja.png'
+              src='../images/depilacja.png'
               alt='Depilacja'
               fallback={<Skeleton />}
               maxH='450px'
