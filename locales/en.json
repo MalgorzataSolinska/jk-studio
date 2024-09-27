@@ -2,15 +2,15 @@
   "homeHeader": {
     "title": "Professional Sugaring Hair Removal"
   },
-  "header":{
-    "reservation.default":"RESERVATIONS", 
-    "reservation.md":"RESERVATIONS", 
-    "about":"About us", 
-    "offer":"Offer", 
-    "gallery":"Gallery", 
-    "blog":"Blog", 
-    "contact":"Contact"
-},
+  "header": {
+    "reservation.default": "RESERVATIONS",
+    "reservation.md": "RESERVATIONS",
+    "about": "About us",
+    "offer": "Offer",
+    "gallery": "Gallery",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
   "home": {
     "title": "Smooth Body and Self-Care",
     "description": "Discover the benefits of our sugaring hair removal services for flawlessly smooth skin",
@@ -43,27 +43,41 @@
       "ownerTitle": "Salon Owner",
       "ownerDescription": "Praised by clients for the high quality of services provided. Gained experience in sugaring hair removal since 2015 and continually improves her skills. A perfectionist at work, fully focused on what she does. Personally, a happy mother of a wonderful girl. Always energetic and smiling."
     }
-},
-  
-  
-    "offer": { 
-      "pricing": "Price List", 
-      "sugaring": "Sugaring Hair Removal",
-      "woman": "WOMAN",
-      "man": "MAN", 
-      "upperLip": "Upper lip", 
-      "armpits": "Armpits", 
-      "arms": "Arms", 
-      "bikiniLine": "Bikini Line", 
-      "brazilianBikini": "Brazilian Bikini",
-      "calves": "Calves", 
-      "legs": "Full Legs",
-      "chest": "Chest", 
-      "back": "Back", 
-      "bikini": "Bikini", 
-      "thighs": "Thighs", 
-      "scrub": "Scrub", 
-      "fullBodyScrub": "Full-Body Scrub"
-    }
+  },
+
+  "offer": {
+    "pricing": "Price List",
+    "sugaring": "Sugaring Hair Removal",
+    "woman": "WOMAN",
+    "man": "MAN",
+    "upperLip": "Upper lip",
+    "armpits": "Armpits",
+    "arms": "Arms",
+    "bikiniLine": "Bikini Line",
+    "brazilianBikini": "Brazilian Bikini",
+    "calves": "Calves",
+    "legs": "Full Legs",
+    "chest": "Chest",
+    "back": "Back",
+    "bikini": "Bikini",
+    "thighs": "Thighs",
+    "scrub": "Scrub",
+    "fullBodyScrub": "Full-Body Scrub"
+  },
+  "gallery": {
+    "gallery": "Gallery"
+  },
+  "blog": {
+    "blog": "Blog",
+    "procedure": "How's the procedure",
+    "alexandria_products": "Alexandria Professional products",
+    "why_sugar_paste": "Why sugar paste",
+    "preparing_for_procedure": "Procedure prep",
+    "article": "Article not found"
+  },
+  "contact": {
+    "contact": "Contact",
+    "open_map": "Click to view the map"
+  }
   
 }
