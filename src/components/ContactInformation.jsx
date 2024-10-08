@@ -35,7 +35,7 @@ function ContactInformation() {
           {' '}
           {t('contactInformation.phoneNumber')}
         </Link>
-        <Link href='mailto:depilacja.jkstudio@gmail.com' _hover={{ textDecoration: 'underline' }}>
+        <Link href='mailto:jk.studio.krakow@gmail.com' _hover={{ textDecoration: 'underline' }}>
         {t('contactInformation.emailAddress')}
         </Link>
 

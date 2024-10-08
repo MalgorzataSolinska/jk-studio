@@ -24,7 +24,7 @@
     "openingHours": "Pn-Nd: 10:00 - 21:00",
     "contact": "KONTAKT",
     "phoneNumber": "+48 502 765 640",
-    "emailAddress": "depilacja.jkstudio@gmail.com",
+    "emailAddress": "jk.studio.krakow@gmail.com",
     "reservations": " Rezerwacje",
     "followUs": "ŚLEDŹ NAS"
   },
@@ -60,5 +60,20 @@
     "thighs": "Uda",
     "scrub": "Peeling",
     "fullBodyScrub": "Peeling całego ciała"
+  },
+  "gallery": { 
+    "gallery": "Galeria"
+  },
+  "blog": { 
+    "blog": "Blog",
+    "procedure": "Jak wygląda zabieg",
+    "alexandria_products": "Produkty Alexandria Professiona",
+    "why_sugar_paste": "Dlaczego pasta cukrowa", 
+    "preparing_for_procedure": "Jak przygotować się do zabiegu",
+    "article": "Artykuł nie został znaleziony"
+  },
+  "contact": {
+    "contact": "Kontakt",
+    "open_map": "Kliknij aby przejść do mapy"
   }
 }

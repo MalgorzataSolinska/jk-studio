@@ -4,6 +4,7 @@ import { useInView } from 'react-intersection-observer';
 import Header from '../components/Header';
 import { Box, Heading, Image, Skeleton, Link } from '@chakra-ui/react';
 import ContactInformation from '../components/ContactInformation';
+import { useTranslation } from 'react-i18next';
 
 function Contact() {
   const { ref, inView } = useInView({
@@ -22,13 +23,13 @@ function Contact() {
       return () => clearTimeout(timer);
     }
   }, [inView]);
-
+  const { t } = useTranslation();
   return (
     <>
       <Header />
       <Box id='contact' p={5}>
         <Heading as='h2' size='xl' mb='5' mt='15' ml='5'>
-          Kontakt
+          {t('contact.contact')}
         </Heading>
       </Box>
       <Box ml='5' mt='5' mr='5'>
@@ -57,7 +58,7 @@ function Contact() {
             </motion.div>
             {showText && (
               <Box position='absolute' top='50px' left='50px' bg='white' p={2} borderRadius='md' boxShadow='md'>
-                Kliknij, aby przejść do mapy
+                {t('contact.open_map')}
               </Box>
             )}
           </div>

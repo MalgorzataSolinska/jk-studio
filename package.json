@@ -2,7 +2,7 @@
   "name": "jk-studio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://MalgorzataSolinska.github.io/jk-studio",
+  "homepage": "https://www.jk-studio.com.pl",
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
     "@chakra-ui/react": "^2.8.2",

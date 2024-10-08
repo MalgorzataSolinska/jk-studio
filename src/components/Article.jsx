@@ -2,15 +2,18 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Box, Heading, Text, Image, Stack } from '@chakra-ui/react';
-import articles from '../data/articlesData';
+import Articles from '../data/articlesData';
 import Header from '../components/Header';
+import { useTranslation } from 'react-i18next';
 
 const Article = () => {
+  const articles = Articles();
   const { id } = useParams();
   const article = articles.find((article) => article.id.toString() === id);
+  const { t } = useTranslation();
 
   if (!article) {
-    return <Text>Artykuł nie został znaleziony</Text>;
+    return <Text>{t('blog.article')}</Text>;
   }
 
   return (

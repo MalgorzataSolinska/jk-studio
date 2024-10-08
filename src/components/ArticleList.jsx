@@ -2,11 +2,12 @@
 import React from 'react';
 import { Box, Heading, Text, Image, SimpleGrid, Link, Flex, Divider } from '@chakra-ui/react';
 import { Link as RouterLink } from 'react-router-dom';
-import articles from '../data/articlesData';
+import Articles from '../data/articlesData';
 import { motion } from 'framer-motion';
 const MotionBox = motion(Box);
 
 const ArticleList = () => {
+  const articles = Articles();
   return (
     <Box p={5}>
       <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={5}>
