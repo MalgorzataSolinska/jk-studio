@@ -18,18 +18,28 @@ const Article = () => {
 
   return (
     <>
-      <Header />
-      <Box p={5}>
+    <Header />
+    <Box p={5}>
       <Heading as='h2' size='xl' mb='5' mt='15' ml='5'>{article.title}</Heading>
-        <Text mt={2} ml='5'>{article.date}</Text>
-        <Stack direction={{ base:'column', md: 'row' }} spacing={{ base: '10', md: '10' }}>
-        <Image  
-              src={article.image} alt={article.title} my={5} maxW={{md:'300px'}}  rounded='lg' shadow='lg' />
-        <Text>{article.content}</Text>
-        
-          </Stack>
+      <Text mt={2} ml='5'>{article.date}</Text>
+      <Stack spacing={5}>
+        <Box>
+          <Image
+            src={article.image}
+            alt={article.title}
+            my={5}
+            maxH={{ base: '300px', md: '400px' }} // Set a max height for responsiveness
+            objectFit='cover' // Maintain aspect ratio and cover the box
+            rounded='lg'
+            shadow='lg'
+            width="100%" // Make the image take the full width of its container
+          />
         </Box>
-      
+        <Text textAlign='justify'>
+          {article.content}
+        </Text>
+      </Stack>
+    </Box>
     </>
   );
 };
