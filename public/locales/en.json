@@ -62,7 +62,19 @@
     "bikini": "Bikini",
     "thighs": "Thighs",
     "scrub": "Scrub",
-    "fullBodyScrub": "Full-Body Scrub"
+    "fullBodyScrub": "Full-Body Scrub",
+    "handScrub": "Hand Scrub",
+    "handAndArmScrub": "Hand and Forearm Scrub",
+    "relaxingMassage": "Relaxing Massages",
+    "relaxingMassages": {
+      "fullBodyMassage1h": "Full-Body Massage",
+      "fullBodyMassage1.5h": "Extended Full-Body Massage",
+      "backMassage": "Back Massage",
+      "backAndLegMassage": "Back and Leg Massage (includes arms, buttocks, and feet)",
+      "legMassage": "Leg Massage",
+      "footMassage": "Foot Massage",
+      "handMassage": "Hand Massage"
+    }
   },
   "gallery": {
     "gallery": "Gallery"
@@ -79,5 +91,4 @@
     "contact": "Contact",
     "open_map": "Click to view the map"
   }
-  
 }

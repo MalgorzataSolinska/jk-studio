@@ -48,16 +48,20 @@ function Contact() {
             >
               <Image
                 borderRadius='md'
+                _hover={{ transform: "scale(1.02)" }}
+                transition="all 0.2s ease-in-out"
                 src='../images/mapa.png'
                 alt='Mapa'
                 fallback={<Skeleton />}
                 objectFit='cover'
                 maxH={{ base: 'auto', md: '700' }}
                 width={{ md: '100%', lg: '80%' }}
+                boxShadow='xl'
+                rounded='20'
               />
             </motion.div>
             {showText && (
-              <Box position='absolute' top='50px' left='50px' bg='white' p={2} borderRadius='md' boxShadow='md'>
+              <Box position='absolute' top='50px' left='50px' bg='white' p={2} borderRadius='md' boxShadow='lg' rounded='20'>
                 {t('contact.open_map')}
               </Box>
             )}

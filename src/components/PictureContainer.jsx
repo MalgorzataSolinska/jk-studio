@@ -10,6 +10,7 @@ function PictureContainer({ src, onClick }) {
     <MotionBox
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
+      transition="all 0.2s ease-in-out" 
       p='5'
       spacing='5px'
       w='fit-content'

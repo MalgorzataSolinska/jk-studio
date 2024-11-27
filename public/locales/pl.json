@@ -59,7 +59,19 @@
     "bikini": "Bikini",
     "thighs": "Uda",
     "scrub": "Peeling",
-    "fullBodyScrub": "Peeling całego ciała"
+    "fullBodyScrub": "Peeling całego ciała",
+    "handScrub": "Peeling dłoni", 
+    "handAndArmScrub": "Peeling dłoni i przedramion", 
+    "relaxingMassage": "Masaże relaksacyjne",
+    "relaxingMassages": {
+      "fullBodyMassage1h": "Masaż całego ciała", 
+      "fullBodyMassage1.5h": "Masaż całego ciała",
+      "backMassage": "Masaż pleców", 
+      "backAndLegMassage": "Masaż tylniej części ciała (plecy, ręce, pośladki, uda, łydki, stopy)", 
+      "legMassage": "Masaż kończyn dolnych", 
+      "footMassage": "Masaż stóp", 
+      "handMassage": "Masaż dłoni"
+    }
   },
   "gallery": { 
     "gallery": "Galeria"
