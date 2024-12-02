@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Box, Text, Button, Image, Skeleton, Stack, Heading, useColorModeValue } from '@chakra-ui/react';
+import { Flex, Box, Text, Button, Image, Skeleton, Stack, Heading } from '@chakra-ui/react';
 import HomeHeader from '../components/HomeHeader';
 import { Link as RouterLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -91,12 +91,12 @@ function Home() {
               </Stack>
             </Stack>
           </Box>
-          <Flex flex='1' overflow='hidden' shadow={{lg:'xl'}} rounded={{lg:'md'}}>
+          <Flex flex='1' overflow='hidden' shadow={{lg:'xl'}} rounded={{lg:'lg'}} >
             <Image
               src='../images/pastacukrowa.png'
               alt='Pasta Cukrowa'
               fallback={<Skeleton />}
-              maxH='450px'
+              maxH='460px'
               minW='300px'
               objectFit='cover'
               flex='1'
@@ -106,7 +106,7 @@ function Home() {
               src='../images/depilacja.png'
               alt='Depilacja'
               fallback={<Skeleton />}
-              maxH='450px'
+              maxH='460px'
               objectFit='cover'
             />
           </Flex>
