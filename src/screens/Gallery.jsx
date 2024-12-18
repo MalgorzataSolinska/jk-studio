@@ -5,7 +5,7 @@ import PictureContainer from '../components/PictureContainer';
 import Lightbox from 'react-18-image-lightbox';
 import 'react-18-image-lightbox/style.css';
 import { useState } from 'react';
-
+import { useTranslation } from 'react-i18next';
 
 const images = [
   { src: '/images/Jana-kosmetyki.png', category: 'kosmetyki' },
@@ -39,13 +39,13 @@ function Gallery() {
   };
   // const kosmetykiImages = images.filter((image) => image.category === 'kosmetyki');
   // const depilacjaImages = images.filter((image) => image.category === 'depilacja');
-
+  const { t } = useTranslation();
   return (
     <>
       <Header />
       <Box id='gallery' p='5'>
         <Heading as='h2' size='xl' mb='5' mt='15' ml='5'>
-          Galeria
+        {t('gallery.gallery')}
         </Heading>
         <Box p={5}>
           <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={5}>

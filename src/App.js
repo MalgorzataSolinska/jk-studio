@@ -8,9 +8,15 @@ import Contact from './screens/Contact';
 import Blog from './screens/Blog';
 import Footer from './components/Footer';
 import Article from './components/Article';
+import { Box } from '@chakra-ui/react';
 
 function App() {
   return (
+    <Box 
+    bg="#f9f9f9"   // Jasnoszare tło dla całej aplikacji
+    minH="100vh"    // Gwarantuje pełne pokrycie widoku
+    //padding="20px"  // Dodanie marginesów wewnętrznych
+  >
     <div>
       <main>
         <Routes>
@@ -25,6 +31,7 @@ function App() {
       </main>
       <Footer />
     </div>
+    </Box>
   );
 }
 

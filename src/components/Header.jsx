@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import LanguageSelector from './LanguageSelector';
 import { useTranslation } from 'react-i18next';
 
+
 function Header() {
   const { t } = useTranslation();
   return (
@@ -12,7 +13,7 @@ function Header() {
         {' '}
         <LanguageSelector />
       </Flex>
-      <Flex justify='space-between' p={4} bg='white' boxShadow='md'>
+      <Flex justify='space-between' p={4} >
         <Flex>
           <Link as={Link} to='/'>
             <Text
@@ -41,10 +42,14 @@ function Header() {
             target='_blank'
             to='https://booksy.com/pl-pl/242997_jk-studio_depilacja_8820_krakow#ba_s=sr_1'
             bg='#b49dcd'
+            border='solid'
+            borderColor='#f1e7fc'
             color='white'
-            fontWeight='bold'
+            fontWeight='800'
+            rounded='lg'
+            _hover={{ bg: '#dbc1e5', transform: 'scale(1.02)' }}
           >
-            {useBreakpointValue({ base: t('header.reservation.default'), md: t('header.reservation.md')})}
+            {useBreakpointValue({ base: t('header.reservation.default'), md: t('header.reservation.md') })}
           </Button>
         </Flex>
       </Flex>
@@ -55,9 +60,10 @@ function Header() {
         wrap='wrap'
         marginTop='5px'
         fontSize={{ base: 15, md: 17, lg: 20 }}
-        boxShadow='md'
+        boxShadow='lg'
+        rounded='lg'
       >
-        <Stack direction='row' spacing={4} mr={5} ml={5}>
+        <Stack direction='row' spacing={4} mr={5} ml={5} >
           <Link to='/about'>{t('header.about')}</Link>
           <Link to='/offer'>{t('header.offer')}</Link>
           <Link to='/gallery'>{t('header.gallery')}</Link>
