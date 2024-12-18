@@ -148,13 +148,15 @@ function Offer() {
                 <Table variant='simple' size={{ base: 'sm', md: 'md', lg: 'md' }}>
                   <Tbody>
                     {[
+                      {service: t('offer.relaxingMassages.kobido'), time: '60 min', price: '120 PLN'},
                       { service: t("offer.relaxingMassages.fullBodyMassage1h"), time: '60 min', price: '150 PLN' },
                       { service: t('offer.relaxingMassages.fullBodyMassage1.5h'), time: '90 min', price: '200 PLN' },
                       { service: t('offer.relaxingMassages.backMassage'), time: '30 min', price: '80 PLN' },
                       { service: t('offer.relaxingMassages.backAndLegMassage'), time: '60 min', price: '150 PLN' },
                       { service: t('offer.relaxingMassages.legMassage'), time: '40 min', price: '90 PLN' },
                       { service: t('offer.relaxingMassages.footMassage'), time: '20 min', price: '40 PLN' },
-                      { service: t('offer.relaxingMassages.handMassage'), time: '15 min', price: '30 PLN' },
+                      { service: t('offer.relaxingMassages.handMassage'), time: '15 min', price: '30 PLN' }
+                    
                     ].map((item, index) => (
                       <AnimatedTableRow key={index}>
                         <Td textAlign='left' whiteSpace="normal" fontSize='md'>

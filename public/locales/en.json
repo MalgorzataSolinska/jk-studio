@@ -1,6 +1,6 @@
 {
   "homeHeader": {
-    "title": "Professional Sugaring Hair Removal"
+    "title": "Professional care for your body"
   },
   "header": {
     "reservation.default": "RESERVATIONS",
@@ -12,8 +12,8 @@
     "contact": "Contact"
   },
   "home": {
-    "title": "Smooth Body and Self-Care",
-    "description": "Discover the benefits of our sugaring hair removal services for flawlessly smooth skin",
+    "title": "Your beauty in the best hands",
+    "description": "Relax and let us take care of your body",
     "knowMoreButton": "LEARN MORE",
     "reservationButton": "BOOK AN APPOINTMENT"
   },
@@ -34,14 +34,14 @@
     "aboutUs": {
       "aboutUs": "About Us",
       "about_us_part1": "JK Studio was established with individuals who value comfort and professionalism in mind. Our staff is fully dedicated to ensuring complete customer satisfaction through perfect service and a friendly atmosphere. Hygiene and safety during each treatment are our top priorities.",
-      "about_us_part2": "The salon offers sugaring hair removal, a very effective method for removing hair from the entire body. The treatment is safe and suitable for all skin types—even sensitive skin.",
+      "about_us_part2": "The salon offers sugar paste waxing, an effective and safe hair removal method suitable even for sensitive skin. We also offer relaxing massages that help reduce stress, as well as the Kobido massage, which restores firmness and a more youthful appearance to the skin. Additionally, we provide exfoliating treatments that deeply cleanse the skin, leaving it smooth and radiant.",
       "about_us_part3": "In our salon, we provide full understanding for our clients. Want to bring your child? No problem—we have a play area with building blocks and coloring books. Or perhaps you have a pet with you? You are warmly welcome!"
     },
     "team": {
       "team": "Team",
       "ownerName": "JANA",
       "ownerTitle": "Salon Owner",
-      "ownerDescription": "Praised by clients for the high quality of services provided. Gained experience in sugaring hair removal since 2015 and continually improves her skills. A perfectionist at work, fully focused on what she does. Personally, a happy mother of a wonderful girl. Always energetic and smiling."
+      "ownerDescription": "Appreciated by clients for the high quality of services provided. With experience gained since 2015, she continuously improves her skills. A perfectionist at work, fully focused on what she does. Privately, a happy mother of a wonderful little girl. Always full of energy and smiling."
     }
   },
 
@@ -73,7 +73,8 @@
       "backAndLegMassage": "Back and Leg Massage (includes arms, buttocks, and feet)",
       "legMassage": "Leg Massage",
       "footMassage": "Foot Massage",
-      "handMassage": "Hand Massage"
+      "handMassage": "Hand Massage",
+      "kobido": "Kobido - Japanese facial massage"
     }
   },
   "gallery": {

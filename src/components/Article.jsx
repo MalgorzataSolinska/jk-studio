@@ -23,7 +23,7 @@ const Article = () => {
       <Heading as='h2' size='xl' mb='5' mt='15' ml='5'>{article.title}</Heading>
       <Text mt={2} ml='5'>{article.date}</Text>
       <Stack spacing={5}>
-        <Box>
+        <Box align='center'>
           <Image
             src={article.image}
             alt={article.title}
@@ -33,9 +33,10 @@ const Article = () => {
             rounded='lg'
             shadow='lg'
             width="100%" // Make the image take the full width of its container
+            
           />
         </Box>
-        <Text textAlign='justify'>
+        <Text textAlign='justify' >
           {article.content}
         </Text>
       </Stack>
