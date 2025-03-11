@@ -1,10 +1,13 @@
 {
+  "language": "en-US",
   "homeHeader": {
     "title": "Professional care for your body"
   },
   "header": {
-    "reservation.default": "RESERVATIONS",
-    "reservation.md": "RESERVATIONS",
+    "reservation": {
+      "default": "RESERVATIONS",
+      "md": "RESERVATIONS"
+    },
     "about": "About us",
     "offer": "Offer",
     "gallery": "Gallery",
@@ -83,9 +86,72 @@
   "blog": {
     "blog": "Blog",
     "procedure": "How's the procedure",
+    "howIsTheProcedure": {
+      "subtitle": "Sugar waxing is one of the gentlest and most natural hair removal methods. It is less painful than waxing, does not irritate the skin, and provides long-lasting smoothness. What exactly does the procedure look like? Here's everything you need to know before your visit to the beauty salon.",
+      "part1_title": "Preparation for the procedure",
+      "part1": "To ensure that the hair removal is effective and comfortable, it is important to properly prepare the skin.",
+      "part1_1": "Hair length – it is best for the hairs to be around 5 mm long (too short may not be removed, and too long will make the procedure more painful).",
+      "part1_2": "Exfoliation – a gentle exfoliation the day before the procedure is recommended to remove dead skin cells and prevent ingrown hairs.",
+      "part1_3": "Avoid using lotions and oils – the skin should be dry and clean, as oily products may hinder the adhesion of the sugar paste.",
+      "part2_title": "Course of the hair removal",
+      "part2_1": "Step 1: Applying the sugar paste – The person performing the procedure warms the sugar paste in their hands to achieve the proper consistency (it is pliable and slightly sticky). Then, it is applied to the skin in the direction opposite to the hair growth, pressing and spreading it in several movements.",
+      "part2_2": "Step 2: Removing the hair – After thoroughly covering the area, the paste is quickly removed in the direction of hair growth. This way, the hair is removed along with the follicles, the skin is less irritated, and the risk of ingrown hairs is minimized.",
+      "part2_3": "Step 3: Repeating the process – The procedure is repeated on other areas of the skin until all hairs are removed. Unlike waxing, the same ball of paste can be used repeatedly during one session, as it does not stick to the skin, only to the hairs.",
+      "part2_4": "Step 4: Cleansing the skin – The sugar paste is water-soluble, so the residue can easily be washed off with warm water without the need for oils. Finally, a soothing balm is applied to prevent irritation.",
+      "part3_title": "Post-procedure care",
+      "part3": "After the hair removal, it is important to take care of the skin: avoid hot baths and saunas for 24 hours to prevent irritation, use a moisturizing lotion or aloe to soothe the skin, and regularly exfoliate to prevent ingrown hairs.",
+      "part4_title": "Is it worth trying sugar hair removal?",
+      "part4": "YES! This is the ideal method for people with sensitive skin who want to avoid irritation, ingrown hairs, and chemical ingredients in cosmetics. If you're looking for an effective, natural, and less painful alternative to waxing, sugar paste will be a great choice! 💛 Have you tried this method yet? Book your appointment today! 😊"
+    },
     "alexandria_products": "Alexandria Professional products",
+    "alexandria_product": {
+      "subtitle": "Our priority is to provide the highest quality services to our clients, which is why we chose Alexandria Professional – a brand recognized as a global leader in sugar hair removal. Why these products?",
+      "part1_title": "Natural, Skin-Safe Ingredients",
+      "part1": "In our salon, we care about the health and comfort of our clients, which is why we wanted cosmetics with a natural composition. Alexandria Professional products are based on simple, hypoallergenic ingredients: sugar, water, and lemon juice. This makes them safe even for people with sensitive skin or allergies. They contain no artificial preservatives or chemical additives that could irritate the skin.",
+      "part2_title": "Less Pain and Irritation",
+      "part2": "Compared to traditional methods, such as waxing, Alexandria Professional sugar hair removal is significantly less painful. The paste only adheres to the hair, not the skin, which minimizes irritation and prevents damage to the epidermis. This is very important to us because we want every visit to our salon to be as stress-free and pleasant as possible for our clients.",
+      "part3_title": "Long-Lasting Results and Weaker Hair Regrowth",
+      "part3": "Clients of our salon expect long-lasting results – and that’s exactly what Alexandria Professional products guarantee. By removing hair along with the root, the effects last up to 6 weeks. Additionally, regular use of this method weakens the hair and gradually thins it.",
+      "part4_title": "Professional Pre- and Post-Depilation Care Cosmetics",
+      "part4": "In addition to the sugar paste itself, Alexandria Professional offers a full range of skincare products that support skin regeneration and prevent irritation. In our salon, we use, among others: Presept™ Skin Cleanser – cleanses the skin before the procedure and increases the paste's adherence, Phenomen-all™ Regenerating Balm – soothes the skin after the procedure and prevents ingrown hairs, Restore™ Hydrating Lotion – intensely moisturizes the skin and supports its regeneration. Thanks to these products, our clients can enjoy perfectly smooth and healthy skin for a long time.",
+      "part5_title": "Eco-Friendly and Responsible Approach",
+      "part5": "More and more people are paying attention to whether cosmetics are produced responsibly. Alexandria Professional is a brand that focuses on natural and biodegradable ingredients and does not test its products on animals. This is extremely important to our salon – we want to offer our clients not only effective but also ethical and eco-friendly solutions.",
+      "summary": "Choosing Alexandria Professional cosmetics was an obvious decision for us. Thanks to them, we can offer clients a safe, effective, and less painful hair removal method that provides long-lasting results and cares for the skin. If you're looking for a place where your skin will be treated with the utmost care – we warmly invite you to our salon! 😊"
+    },
     "why_sugar_paste": "Why sugar paste",
-    "preparing_for_procedure": "Procedure prep",
+    "whySugarPaste": {
+      "subtitle": "Hair removal is one of the most popular cosmetic treatments, and among the available methods, sugar paste is gaining increasing popularity. This natural hair removal method has many advantages and can be a great alternative to traditional waxing or shaving. Why should you choose sugar paste?",
+      "part1_title": "Natural ingredients – safe for the skin",
+      "part1": "One of the biggest advantages of sugar paste is its simple, natural composition. It contains only sugar, water, and lemon juice, which makes it hypoallergenic and suitable even for people with sensitive skin. Unlike waxes, it does not contain chemical additives, preservatives, or artificial fragrances that could irritate the skin.",
+      "part2_title": "Less pain and irritation",
+      "part2": "Many people avoid waxing because it is associated with significant pain. Sugar paste is gentler on the skin because: it removes the hairs in the direction of their growth – reducing the risk of ingrown hairs, it does not stick to the skin, only to the hairs – resulting in less irritation and redness, and it can be used even on sensitive areas like the face, underarms, or bikini line.",
+      "part3_title": "Long-lasting results and weaker regrowth",
+      "part3": "Sugar paste removes hairs along with their follicles, which means the results last for up to 3-4 weeks. Moreover, regular use of this method makes the hairs grow back weaker, thinner, and lighter, reducing their visibility and the frequency of hair removal.",
+      "part4_title": "Hygiene and easy removal of residue",
+      "part4": "One of the problems with waxing is the difficulty in removing the wax residue from the skin – it often requires oils or special products. Sugar paste is water-soluble, meaning it can easily be washed off with warm water. As a result, the skin is clean and smooth after the treatment without any sticky feeling.",
+      "summary": "If you're looking for an effective, less painful, and natural hair removal method, sugar paste is an excellent choice. With it, you can enjoy smooth skin for a long time, avoiding irritation and ingrown hairs. It's a skin- and eco-friendly alternative that is gaining more and more followers. Have you tried sugar waxing yet? Maybe it's time to give it a try! 😊✨"
+    },
+    "preparing_for_procedure": "How to prepare for the procedure?",
+    "preparing_for_procedures": {
+      "title": "How to prepare for sugaring hair removal?",
+      "subtitle": "Sugaring is one of the most natural and gentle methods of hair removal. To make the procedure as effective and comfortable as possible, it's essential to prepare properly. Below are some key steps to help you achieve the best results.",
+      "part1_title": "Allow hair to grow to the appropriate length",
+      "part1": "For the sugar paste to effectively remove hair, it should be about 3-5 mm long. Hair that is too short may not be removed properly, while hair that is too long may cause greater discomfort during the procedure.",
+      "part2_title": "Exfoliate your skin",
+      "part2": "One or two days before the procedure, it is recommended to exfoliate your skin. This removes dead skin cells, making it easier for the sugar paste to grip the hair and reducing the risk of ingrown hairs after hair removal. However, avoid exfoliating right before the procedure to prevent skin irritation.",
+      "part3_title": "Moisturize and care for your skin",
+      "part3": "Regularly moisturizing your skin is crucial for its condition, but on the day of the procedure, avoid using lotions and oils as they can make it harder for the sugar paste to adhere to the hair.",
+      "part4_title": "Avoid sun exposure and irritation",
+      "part4": "If you plan to undergo sugaring, avoid tanning, saunas, and tanning beds for at least 24 hours before the procedure. Sunburned or irritated skin may be more sensitive to pain.",
+      "part5_title": "Maintain hygiene before the procedure",
+      "part5": "Just before sugaring, thoroughly wash the skin with a mild soap and dry it with a towel. Avoid using antiperspirants and scented cosmetics on the area to be treated.",
+      "part6_title": "Choose appropriate clothing",
+      "part6": "If you are sugaring areas such as legs or the bikini line, wear loose, breathable clothing that won’t rub or irritate freshly treated skin.",
+      "part7_title": "Relax and maintain a positive mindset",
+      "part7": "Sugaring is less painful than waxing, but it can still be slightly uncomfortable for some. Try to stay calm, relax, and breathe evenly during the procedure.",
+      "summary": "Proper preparation for sugaring will make the procedure more effective and comfortable, keeping your skin smooth for longer. Following these tips will help you avoid irritation and enjoy beautifully maintained skin for weeks!"
+    },
+
     "article": "Article not found"
   },
   "contact": {
