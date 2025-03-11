@@ -25,7 +25,17 @@ function About() {
   const { t } = useTranslation();
   return (
     <>
-      <Header />
+      <Header
+        position='fixed'
+        top='0'
+        left='0'
+        width='100%'
+        zIndex='1000'
+        bg='gray.800' // Kolor tła, dostosuj do swojej strony
+        color='white'
+        p='4'
+      />
+      
       <Box id='about' p={5}>
         <Heading as='h2' size='xl' mb='5' mt='15' ml='5'>
           {t('about.aboutUs.aboutUs')}
@@ -66,7 +76,7 @@ function About() {
           </motion.div>
         </Flex>
         <Heading as='h2' size='xl' mb='5' mt='55' ml='5'>
-          {t("about.team.team")}
+          {t('about.team.team')}
         </Heading>
         <Flex direction={{ base: 'column', md: 'row', lg: 'row' }}>
           <motion.div
@@ -78,14 +88,12 @@ function About() {
           >
             <Stack mt='5' mr='5' mb='5' ml='5' textAlign='justify'>
               <Text mb='5' fontSize='xl' fontWeight='bold'>
-              {t("about.team.ownerName")}
+                {t('about.team.ownerName')}
               </Text>
               <Text mb='5' fontWeight='bold'>
-              {t("about.team.ownerTitle")}
+                {t('about.team.ownerTitle')}
               </Text>
-              <Text mb='5'>
-              {t("about.team.ownerDescription")}
-              </Text>
+              <Text mb='5'>{t('about.team.ownerDescription')}</Text>
             </Stack>
           </motion.div>
           <motion.div

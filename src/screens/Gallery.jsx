@@ -37,8 +37,7 @@ function Gallery() {
   const closeLightbox = () => {
     setIsOpen(false);
   };
-  // const kosmetykiImages = images.filter((image) => image.category === 'kosmetyki');
-  // const depilacjaImages = images.filter((image) => image.category === 'depilacja');
+
   const { t } = useTranslation();
   return (
     <>

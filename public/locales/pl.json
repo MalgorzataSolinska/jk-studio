@@ -1,10 +1,13 @@
 {
+  "language": "pl-PL",
   "homeHeader": {
     "title": "Profesjonalna pielęgnacja Twojego ciała"
   },
   "header": {
-    "reservation.default": "REZERWACJA",
-    "reservation.md": "ZAREZERWUJ WIZYTĘ",
+    "reservation": {
+      "default": "REZERWACJA",
+      "md": "ZAREZERWUJ WIZYTĘ"
+    },
     "about": "O nas",
     "offer": "Oferta",
     "gallery": "Galeria",
@@ -60,29 +63,91 @@
     "thighs": "Uda",
     "scrub": "Peeling",
     "fullBodyScrub": "Peeling całego ciała",
-    "handScrub": "Peeling dłoni", 
-    "handAndArmScrub": "Peeling dłoni i przedramion", 
+    "handScrub": "Peeling dłoni",
+    "handAndArmScrub": "Peeling dłoni i przedramion",
     "relaxingMassage": "Masaże relaksacyjne",
     "relaxingMassages": {
-      "fullBodyMassage1h": "Masaż całego ciała", 
+      "fullBodyMassage1h": "Masaż całego ciała",
       "fullBodyMassage1.5h": "Masaż całego ciała",
-      "backMassage": "Masaż pleców", 
-      "backAndLegMassage": "Masaż tylniej części ciała (plecy, ręce, pośladki, uda, łydki, stopy)", 
-      "legMassage": "Masaż kończyn dolnych", 
-      "footMassage": "Masaż stóp", 
+      "backMassage": "Masaż pleców",
+      "backAndLegMassage": "Masaż tylniej części ciała (plecy, ręce, pośladki, uda, łydki, stopy)",
+      "legMassage": "Masaż kończyn dolnych",
+      "footMassage": "Masaż stóp",
       "handMassage": "Masaż dłoni",
       "kobido": "Kobido - japoński masaż twarzy"
     }
   },
-  "gallery": { 
+  "gallery": {
     "gallery": "Galeria"
   },
-  "blog": { 
+  "blog": {
     "blog": "Blog",
     "procedure": "Jak wygląda zabieg",
+    "howIsTheProcedure": {
+      "subtitle": "Depilacja pastą cukrową to jedna z najdelikatniejszych i najbardziej naturalnych metod usuwania owłosienia. Jest mniej bolesna niż woskowanie, nie podrażnia skóry i pozwala cieszyć się długotrwałym efektem gładkości. Jak dokładnie wygląda ten zabieg? Oto wszystko, co warto wiedzieć przed wizytą w salonie kosmetycznym.",
+      "part1_title": "Przygotowanie do zabiegu",
+      "part1": "Aby depilacja była skuteczna i komfortowa, warto odpowiednio przygotować skórę.",
+      "part1_1": "Długość włosków – najlepiej, aby miały ok. 5 mm (zbyt krótkie mogą nie zostać usunięte, a zbyt długie sprawią, że zabieg będzie bardziej bolesny).",
+      "part1_2": "Peeling skóry – dzień przed zabiegiem warto wykonać delikatny peeling, aby usunąć martwy naskórek i zapobiec wrastaniu włosków. ",
+      "part1_3": "Nie stosować balsamów i olejków – skóra powinna być sucha i czysta, ponieważ tłuste kosmetyki mogą utrudniać przyczepność pasty.",
+      "part2_title": "Przebieg depilacji",
+      "part2_1": " Krok 1: Nałożenie pasty cukrowej - Osoba wykonująca zabieg rozgrzewa pastę cukrową w dłoniach, aby uzyskała odpowiednią konsystencję (jest plastyczna i lekko lepka). Następnie nakłada ją na skórę pod włos, dociskając i rozprowadzając ją w kilku ruchach.",
+      "part2_2": " Krok 2: Usunięcie włosków - Po dokładnym pokryciu danego obszaru pasta jest szybkim ruchem zrywany zgodnie z kierunkiem wzrostu włosów. Dzięki temu: włoski są usuwane wraz z cebulkami, skóra jest mniej podrażniona a ryzyko wrastania włosków jest minimalne.",
+      "part2_3": "Krok 3: Powtórzenie procesu - Zabieg powtarza się na kolejnych partiach skóry, aż wszystkie włosy zostaną usunięte. W przeciwieństwie do wosku, ta sama kula pasty może być używana wielokrotnie w trakcie jednej sesji, ponieważ nie przykleja się do skóry, a jedynie do włosków.",
+      "part2_4": " Krok 4: Oczyszczenie skóry - Pasta cukrowa jest rozpuszczalna w wodzie, więc resztki łatwo można zmyć ciepłą wodą bez konieczności używania olejków. Na koniec nakładany jest balsam zapobiegający podrażnieniom.",
+      "part3_title": "Pielęgnacja po zabiegu",
+      "part3": "Po depilacji warto zadbać o skórę: unikać gorących kąpieli i sauny przez 24h, aby uniknąć podrażnień, stosować nawilżający balsam lub aloes, aby ukoić skórę oraz regularnie wykonywać peelingi, aby zapobiec wrastaniu włosków. ",
+      "part4_title": "Czy warto spróbować depilacji cukrowej?",
+      "part4": " TAK! To idealna metoda dla osób o wrażliwej skórze, które chcą uniknąć podrażnień, wrastających włosków i chemicznych składników w kosmetykach. Jeśli szukasz skutecznej, naturalnej i mniej bolesnej alternatywy dla wosku, pasta cukrowa będzie świetnym wyborem! 💛 Czy próbowałaś już tej metody? Zapisz się na zabieg juz dzisiaj! 😊"
+    },
     "alexandria_products": "Produkty Alexandria Professional",
-    "why_sugar_paste": "Dlaczego pasta cukrowa", 
+    "alexandria_product": {
+      "subtitle": "Naszym priorytetem jest zapewnienie klientom jak najwyższej jakości usług, dlatego zdecydowaliśmy się na Alexandria Professional – markę uznawaną za światowego lidera w depilacji cukrowej. Dlaczego właśnie te produkty?",
+      "part1_title": "Naturalny, bezpieczny dla skóry skład",
+      "part1": "W naszym salonie dbamy o zdrowie i komfort klientów, dlatego zależało nam na kosmetykach o naturalnym składzie. Produkty Alexandria Professional bazują na prostych, hipoalergicznych składnikach: cukier, woda oraz sok z cytryny. Dzięki temu są bezpieczne nawet dla osób z wrażliwą skórą i skłonnościami do alergii. Nie zawierają sztucznych konserwantów ani chemicznych dodatków, które mogłyby podrażniać skórę.",
+      "part2_title": "Mniejszy ból i podrażnienia",
+      "part2": "W porównaniu do tradycyjnych metod, takich jak depilacja woskiem, depilacja cukrowa Alexandria Professional jest znacznie mniej bolesna. Pasta przyczepia się tylko do włosów, a nie do skóry, dzięki czemu minimalizuje podrażnienia i nie powoduje uszkodzeń naskórka. To dla nas bardzo ważne, ponieważ chcemy, aby każda wizyta w naszym salonie była jak najmniej stresująca i jak najbardziej przyjemna dla klientów.",
+      "part3_title": "Długotrwałe efekty i słabszy odrost włosów",
+      "part3": "Klienci naszego salonu oczekują długotrwałych efektów – i to właśnie gwarantują produkty Alexandria Professional. Dzięki usuwaniu włosów wraz z cebulką, efekty utrzymują się nawet do 6 tygodni. Co więcej, regularne stosowanie tej metody prowadzi do osłabienia włosków i stopniowego przerzedzenia. ",
+      "part4_title": "Profesjonalne kosmetyki do pielęgnacji przed i po depilacji",
+      "part4": "Oprócz samej pasty cukrowej, Alexandria Professional oferuje pełną gamę produktów pielęgnacyjnych, które wspierają regenerację skóry i zapobiegają podrażnieniom. W naszym salonie stosujemy m.in.: Presept™ Skin Cleanser – oczyszcza skórę przed zabiegiem i zwiększa przyczepność pasty, Phenomen-all™ Balsam regenerujący – łagodzi skórę po zabiegu i zapobiega wrastaniu włosków, Restore™ Hydrating Lotion – intensywnie nawilża skórę i wspomaga jej regenerację.Dzięki tym kosmetykom nasze klientki mogą cieszyć się idealnie gładką i zdrową skórą przez długi czas.",
+      "part5_title": "Ekologiczne i odpowiedzialne podejscie",
+      "part5": "Coraz więcej osób zwraca uwagę na to, czy kosmetyki są produkowane w sposób odpowiedzialny. Alexandria Professional to marka, która stawia na naturalne i biodegradowalne składniki oraz nie testuje swoich produktów na zwierzętach. Dla naszego salonu to niezwykle ważne – chcemy oferować klientom nie tylko skuteczne, ale też etyczne i ekologiczne rozwiązania. ",
+      "summary": "Wybór kosmetyków Alexandria Professional był dla nas oczywisty. Dzięki nim możemy oferować klientom bezpieczną, skuteczną i mniej bolesną metodę depilacji, która zapewnia długotrwałe efekty i dba o skórę. Jeśli szukasz miejsca, w którym Twoja skóra będzie traktowana z największą troską – serdecznie zapraszamy do naszego salonu! 😊"
+    },
+    "why_sugar_paste": "Dlaczego pasta cukrowa",
+    "whySugarPaste": {
+      "subtitle": "Depilacja to jeden z najpopularniejszych zabiegów kosmetycznych, a wśród dostępnych metod coraz większą popularność zdobywa pasta cukrowa. Ten naturalny sposób usuwania owłosienia ma wiele zalet i może być świetną alternatywą dla tradycyjnego wosku czy maszynki do golenia. Dlaczego warto wybrać pastę cukrową?",
+      "part1_title": "Naturalny skład – bezpieczny dla skóry",
+      "part1": "Jednym z największych atutów pasty cukrowej jest jej prosty, naturalny skład. Zawiera ona tylko cukier, wodę i sok z cytryny, co sprawia, że jest hipoalergiczna i odpowiednia nawet dla osób o wrażliwej skórze. W przeciwieństwie do wosków, nie zawiera chemicznych dodatków, konserwantów ani sztucznych zapachów, które mogą podrażniać skórę.",
+      "part2_title": "Mniej bólu i podrażnień",
+      "part2": "Wiele osób unika depilacji woskiem, ponieważ wiąże się ona z dużym bólem. Pasta cukrowa jest delikatniejsza dla skóry, ponieważ: usuwa włoski zgodnie z kierunkiem ich wzrostu – zmniejsza ryzyko wrastania włosków, nie przykleja się do skóry, tylko do włosków – mniej podrażnień i zaczerwienień oraz można ją stosować nawet na wrażliwe obszary, jak twarz, pachy czy bikini.",
+      "part3_title": "Długotrwałe efekty i słabszy odrost",
+      "part3": "Pasta cukrowa usuwa włoski wraz z cebulkami, co sprawia, że efekty utrzymują się nawet 3-4 tygodnie. Co więcej, regularne stosowanie tej metody sprawia, że włosy odrastają słabsze, cieńsze i jaśniejsze, co zmniejsza ich widoczność i częstotliwość depilacji.",
+      "part4_title": "Higiena i łatwe usuwanie resztek",
+      "part4": "Jednym z problemów woskowania jest trudność w usunięciu resztek wosku ze skóry – często wymaga to olejków lub specjalnych preparatów. Pasta cukrowa jest rozpuszczalna w wodzie, co oznacza, że można ją łatwo zmyć ciepłą wodą. Dzięki temu skóra po zabiegu jest czysta i gładka bez uczucia lepkości.",
+      "summary": "Jeśli szukasz skutecznej, mniej bolesnej i naturalnej metody depilacji, pasta cukrowa jest doskonałym wyborem. Dzięki niej możesz cieszyć się gładką skórą przez długi czas, unikając podrażnień i wrastających włosków. To przyjazna dla skóry i środowiska alternatywa, która zyskuje coraz więcej zwolenników. Czy próbowałaś już depilacji pastą cukrową? Może czas spróbować! 😊✨"
+    },
     "preparing_for_procedure": "Jak przygotować się do zabiegu",
+    "preparing_for_procedures": {
+      "subtitle": "Depilacja pastą cukrową to jedna z najbardziej naturalnych i delikatnych metod usuwania zbędnego owłosienia. Aby zabieg był jak najbardziej skuteczny i komfortowy, warto odpowiednio się do niego przygotować. Poniżej kilka kluczowych kroków, które pomogą Ci uzyskać najlepsze rezultaty.",
+      "part1_title": "Zapuszczenie włosków do odpowiedniej długości",
+      "part1": "Aby pasta cukrowa skutecznie usunęła włoski, powinny one mieć długość około 3-5 mm. Zbyt krótkie włoski mogą nie zostać prawidłowo usunięte, natomiast zbyt długie mogą powodować większy dyskomfort podczas zabiegu.",
+      "part2_title": "Peeling skóry",
+      "part2": " Na dzień lub dwa przed planowanym zabiegiem warto wykonać peeling skóry. Dzięki temu usuniesz martwy naskórek, co ułatwi chwytanie włosków przez pastę i zmniejszy ryzyko wrastania włosków po depilacji. Ważne jest jednak, aby nie wykonywać peelingu tuż przed samym zabiegiem, aby nie podrażnić skóry.",
+      "part3_title": "Nawilżenie i pielęgnacja skóry ",
+      "part3": "Regularne nawilżanie skóry jest kluczowe dla jej kondycji, ale w dniu zabiegu lepiej unikać stosowania balsamów i olejków, ponieważ mogą one utrudnić przyleganie pasty cukrowej do włosków.",
+      "part4_title": "Unikanie ekspozycji na słońce i podrażnień",
+      "part4": "Jeśli planujesz depilację, unikaj opalania, sauny oraz solarium na co najmniej 24 godziny przed zabiegiem. Opalona lub podrażniona skóra może być bardziej wrażliwa na ból.",
+      "part5_title": "Higiena przed zabiegiem",
+      "part5": " Tuż przed depilacją warto dokładnie umyć skórę delikatnym mydłem i osuszyć ją ręcznikiem. Unikaj stosowania antyperspirantów i perfumowanych kosmetyków na obszarze, który ma być depilowany.",
+      "part6_title": "Wybór odpowiedniego stroju",
+      "part6": "Jeśli depilujesz np. nogi lub bikini, warto założyć luźne, przewiewne ubrania, które nie będą ocierać ani podrażniać świeżo wydepilowanej skóry.",
+      "part7_title": "Relaks i odpowiednie nastawienie",
+      "part7": "Depilacja pastą cukrową jest mniej bolesna niż woskowanie, ale dla niektórych osób może być nieco niekomfortowa. Warto podejść do niej na spokojnie, zrelaksować się i oddychać równomiernie podczas zabiegu.",
+      "summary": "Odpowiednie przygotowanie do depilacji pastą cukrową sprawi, że zabieg będzie bardziej skuteczny i komfortowy, a skóra pozostanie gładka na dłużej. Przestrzeganie powyższych wskazówek pomoże Ci uniknąć podrażnień i cieszyć się piękną, zadbaną skórą przez wiele tygodni!"
+    },
+
     "article": "Artykuł nie został znaleziony"
   },
   "contact": {

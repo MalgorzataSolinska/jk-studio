@@ -1,8 +1,49 @@
 import { useTranslation } from 'react-i18next';
-import { Stack, Text } from '@chakra-ui/react';
+import { Stack, Text, Divider, Box } from '@chakra-ui/react';
 
 const Articles = () => {
   const { t } = useTranslation();
+  const howIsTheProcedure = [
+    {
+      title: 'blog.howIsTheProcedure.part1_title',
+      content: ['blog.howIsTheProcedure.part1', 'blog.howIsTheProcedure.part1_1', 'blog.howIsTheProcedure.part1_2'],
+    },
+    {
+      title: 'blog.howIsTheProcedure.part2_title',
+      content: [
+        'blog.howIsTheProcedure.part2_1',
+        'blog.howIsTheProcedure.part2_2',
+        'blog.howIsTheProcedure.part2_3',
+        'blog.howIsTheProcedure.part2_4',
+      ],
+    },
+    { title: 'blog.howIsTheProcedure.part3_title', content: 'blog.howIsTheProcedure.part3' },
+    { title: 'blog.howIsTheProcedure.part4_title', content: 'blog.howIsTheProcedure.part4' },
+  ];
+
+  const alexandria_product = [
+    { title: 'blog.alexandria_product.part1_title', content: 'blog.alexandria_product.part1' },
+    { title: 'blog.alexandria_product.part2_title', content: 'blog.alexandria_product.part2' },
+    { title: 'blog.alexandria_product.part3_title', content: 'blog.alexandria_product.part3' },
+    { title: 'blog.alexandria_product.part4_title', content: 'blog.alexandria_product.part4' },
+    { title: 'blog.alexandria_product.part5_title', content: 'blog.alexandria_product.part5' },
+  ];
+  const whySugarPaste = [
+    { title: 'blog.whySugarPaste.part1_title', content: 'blog.whySugarPaste.part1' },
+    { title: 'blog.whySugarPaste.part2_title', content: 'blog.whySugarPaste.part2' },
+    { title: 'blog.whySugarPaste.part3_title', content: 'blog.whySugarPaste.part3' },
+    { title: 'blog.whySugarPaste.part4_title', content: 'blog.whySugarPaste.part4' },
+  ];
+
+  const preparing_for_proceure = [
+    { title: 'blog.preparing_for_procedures.part1_title', content: 'blog.preparing_for_procedures.part1' },
+    { title: 'blog.preparing_for_procedures.part2_title', content: 'blog.preparing_for_procedures.part2' },
+    { title: 'blog.preparing_for_procedures.part3_title', content: 'blog.preparing_for_procedures.part3' },
+    { title: 'blog.preparing_for_procedures.part4_title', content: 'blog.preparing_for_procedures.part4' },
+    { title: 'blog.preparing_for_procedures.part5_title', content: 'blog.preparing_for_procedures.part5' },
+    { title: 'blog.preparing_for_procedures.part6_title', content: 'blog.preparing_for_procedures.part6' },
+    { title: 'blog.preparing_for_procedures.part7_title', content: 'blog.preparing_for_procedures.part7' },
+  ];
 
   const articles = [
     {
@@ -11,76 +52,132 @@ const Articles = () => {
       date: '2024-12-18',
       image: '/images/Jana-kosmetyki.png',
       content: (
-        <Stack spacing={4}>
-          <Text mb={4} fontWeight='bold'>
-            Dlaczego warto skorzystać z depilacji pastą cukrową w JK Studio?
+        <Stack spacing={6} p={4} maxW='800px' mx='auto'>
+          <Text fontSize='lg' color='gray.600'>
+            {t('blog.howIsTheProcedure.subtitle')}
           </Text>
-          <Text mb={4}>
-            Depilacja pastą cukrową to coraz bardziej popularna metoda usuwania owłosienia, która cieszy się uznaniem
-            wśród wielu osób. Dlaczego warto rozważyć tę technikę? Oto kilka powodów, dla których depilacja pastą
-            cukrową w naszym salonie JK Studio ma przewagę nad innymi metodami usuwania owłosienia.
-          </Text>
-          <Text fontWeight='bold'>1. Profesjonalna obsługa</Text>
-          <Text mb={4}>
-            W JK Studio zapewniamy wykwalifikowanych specjalistów, którzy posiadają wiedzę i doświadczenie w depilacji
-            pastą cukrową. Dzięki temu możesz być pewna, że zabieg zostanie przeprowadzony w sposób bezpieczny i
-            skuteczny. Nasi eksperci zadbają o Twój komfort oraz odpowiednią technikę, aby minimalizować dyskomfort
-            podczas depilacji.
-          </Text>
-          <Text fontWeight='bold'>2. Naturalne składniki</Text>
-          <Text mb={4}>
-            Pasta cukrowa, której używamy, składa się z naturalnych składników, takich jak cukier, woda i sok z cytryny.
-            Dzięki temu jest delikatna dla skóry i nie powoduje podrażnień, co czyni ją idealnym rozwiązaniem nawet dla
-            osób z wrażliwą skórą.
-          </Text>
-          <Text fontWeight='bold'>3. Mniej bólu</Text>
-          <Text mb={4}>
-            W porównaniu do tradycyjnych metod depilacji, takich jak woskowanie, depilacja pastą cukrową jest mniej
-            bolesna. Pasta przyczepia się tylko do włosów, a nie do skóry, co zmniejsza odczucie bólu podczas usuwania
-            owłosienia.
-          </Text>
-          <Text fontWeight='bold'>4. Długotrwały efekt</Text>
-          <Text mb={4}>
-            Depilacja pastą cukrową usuwa włosy z korzeniami, co oznacza, że efekt gładkiej skóry utrzymuje się dłużej –
-            zazwyczaj od 3 do 6 tygodni. Regularne stosowanie tej metody może również prowadzić do osłabienia włosów, co
-            sprawia, że stają się one cieńsze i mniej widoczne.
-          </Text>
-          <Text fontWeight='bold'>5. Przyjemna atmosfera</Text>
-          <Text mb={4}>
-            W JK Studio dbamy nie tylko o efektywność zabiegów, ale także o przyjemną atmosferę. Podczas wizyty w naszym
-            salonie możesz liczyć na relaksującą muzykę, komfortowe warunki oraz profesjonalną obsługę, co sprawia, że
-            każdy zabieg staje się miłym doświadczeniem.
-          </Text>
-          <Text fontWeight='bold'>Podsumowanie</Text>
-          <Text mb={4}>
-            Depilacja pastą cukrową w JK Studio to doskonały wybór dla osób poszukujących skutecznej, bezpiecznej i
-            naturalnej metody usuwania owłosienia. Dzięki naszym wykwalifikowanym specjalistom, długotrwałym efektom
-            oraz przyjemnej atmosferze, warto dać tej metodzie szansę. Zainwestuj w swoje piękno i komfort, wybierając
-            depilację pastą cukrową w naszym salonie!
-          </Text>
+          <Divider />
+          {howIsTheProcedure.map((section, index) => (
+            <Box key={index}>
+              <Text fontWeight='bold' fontSize='xl' mb={2}>
+                {t(section.title)}
+              </Text>
+              {Array.isArray(section.content) ? (
+                // Jeżeli content jest tablicą, mapujemy przez nią i wyświetlamy każdy element
+                section.content.map((contentItem, idx) => (
+                  <Text key={idx} fontSize='md' color='gray.700'>
+                    {t(contentItem)} {/* Tłumaczenie elementów w content */}
+                  </Text>
+                ))
+              ) : (
+                // Jeżeli content nie jest tablicą, po prostu wyświetlamy tekst
+                <Text fontSize='md' color='gray.700'>
+                  {t(section.content)} {/* Tłumaczenie pojedynczego tekstu */}
+                </Text>
+              )}
+            </Box>
+          ))}
+          
         </Stack>
       ),
     },
+
     {
       id: 2,
       title: t('blog.why_sugar_paste'),
       date: '2024-08-02',
       image: '/images/pasta-cukrowa.png',
-      content: 'Dlaczego pasta cukrowa.',
+      content: (
+        <Stack spacing={6} p={4} maxW='800px' mx='auto'>
+          <Text fontSize='lg' color='gray.600'>
+            {t('blog.whySugarPaste.subtitle')}
+          </Text>
+
+          <Divider />
+
+          {whySugarPaste.map((section, index) => (
+            <Box key={index}>
+              <Text fontWeight='bold' fontSize='xl' mb={2}>
+                {t(section.title)}
+              </Text>
+              <Text fontSize='md' color='gray.700'>
+                {t(section.content)}
+              </Text>
+            </Box>
+          ))}
+
+          <Divider />
+
+          <Text fontSize='lg' fontWeight='medium' mb='10' color='gray.700'>
+            {t('blog.whySugarPaste.summary')}
+          </Text>
+        </Stack>
+      ),
     },
     {
       id: 3,
       title: t('blog.alexandria_products'),
       date: '2024-08-02',
       image: '/images/kosmetyki.png',
-      content: 'Produkty Alexandria Professional',
+      content: (
+        <Stack spacing={6} p={4} maxW='800px' mx='auto'>
+          <Text fontSize='lg' color='gray.600'>
+            {t('blog.alexandria_product.subtitle')}
+          </Text>
+
+          <Divider />
+
+          {alexandria_product.map((section, index) => (
+            <Box key={index}>
+              <Text fontWeight='bold' fontSize='xl' mb={2}>
+                {t(section.title)}
+              </Text>
+              <Text fontSize='md' color='gray.700'>
+                {t(section.content)}
+              </Text>
+            </Box>
+          ))}
+
+          <Divider />
+
+          <Text fontSize='lg' fontWeight='medium' mb='10' color='gray.700'>
+            {t('blog.alexandria_product.summary')}
+          </Text>
+        </Stack>
+      ),
     },
     {
       id: 4,
       title: t('blog.preparing_for_procedure'),
-      date: '2024-08-02',
+
+      date: '2024-08-10',
       image: '/images/depilacja.png',
-      content: 'Jak wygląda zabieg',
+      content: (
+        <Stack spacing={6} p={4} maxW='800px' mx='auto'>
+          <Text fontSize='lg' color='gray.600'>
+            {t('blog.preparing_for_procedures.subtitle')}
+          </Text>
+
+          <Divider />
+
+          {preparing_for_proceure.map((section, index) => (
+            <Box key={index}>
+              <Text fontWeight='bold' fontSize='xl' mb={2}>
+                {t(section.title)}
+              </Text>
+              <Text fontSize='md' color='gray.700'>
+                {t(section.content)}
+              </Text>
+            </Box>
+          ))}
+
+          <Divider />
+
+          <Text fontSize='lg' fontWeight='medium' mb='10' color='gray.700'>
+            {t('blog.preparing_for_procedures.summary')}
+          </Text>
+        </Stack>
+      ),
     },
   ];
   return articles;
