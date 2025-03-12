@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Box, Heading, Text, Image, Stack, Button, Icon } from '@chakra-ui/react';
 import Articles from '../data/articlesData';
@@ -12,17 +12,56 @@ const Article = () => {
   const article = articles.find((article) => article.id.toString() === id);
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
+  const videoRef = useRef(null);
 
-  if (!article) {
-    return <Text>{t('blog.article')}</Text>;
-  }
+  const [showScrollToTop, setShowScrollToTop] = useState(false);
+
+  useEffect(() => {
+    // Funkcja nasłuchująca przewijania strony
+    const handleScroll = () => {
+      if (window.scrollY > window.innerHeight) {
+        setShowScrollToTop(true); // Pokazuje strzałkę po przewinięciu jednej wysokości okna
+      } else {
+        setShowScrollToTop(false); // Ukrywa strzałkę, jeśli jesteśmy na górze
+      }
+    };
+
+    // Dodanie nasłuchiwania na scroll
+    window.addEventListener('scroll', handleScroll);
+
+    // Usunięcie nasłuchiwacza po zakończeniu działania komponentu
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!article?.video) return;
+
+    // Jeśli jest wideo, odtwarzaj je od razu
+    if (videoRef.current) {
+      videoRef.current.play();
+
+      // Dodaj nasłuchiwanie na zakończenie wideo
+      videoRef.current.addEventListener('ended', () => {
+        // Po zakończeniu wideo, ustawiamy je na początek
+        videoRef.current.currentTime = 1;
+        videoRef.current.play();
+      });
+    }
+  }, [article]);
 
   const handleGoBack = () => {
     navigate('/blog');
   };
+
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' }); // Przewinięcie strony na górę
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  if (!article) {
+    return <Text>{t('blog.article')}</Text>;
+  }
 
   return (
     <>
@@ -56,7 +95,29 @@ const Article = () => {
           })}
         </Text>
 
-        <Stack spacing={5}>
+        {/* Jeśli artykuł ma wideo, pokazujemy je, w przeciwnym razie obrazek */}
+        {article.video ? (
+          <Box
+            position='relative'
+            maxH={{ base: '300px', md: '400px' }}
+            display='flex'
+            alignItems='center'
+            justifyContent='center'
+            overflow='hidden'
+          >
+            <video
+              ref={videoRef}
+              src={article.video}
+              width='100%'
+              height='100%'
+              style={{ objectFit: 'cover' }}
+              playsInline
+              muted
+              autoPlay
+              loop // Zapętlenie wideo
+            />
+          </Box>
+        ) : (
           <Box align='center'>
             <Image
               src={article.image}
@@ -69,25 +130,34 @@ const Article = () => {
               width='100%'
             />
           </Box>
+        )}
+
+        <Stack spacing={5}>
           <Text textAlign='justify' fontSize='md' lineHeight='1.8' color='gray.800'>
             {article.content}
           </Text>
         </Stack>
 
-        <Icon
-          as={MdArrowUpward}
-          onClick={scrollToTop}
-          boxSize='6'
-          variant='ghost'
-          fontSize={{ base: 'medium', md: 'x-large' }}
-          rounded='lg'
-          colorScheme='gray.800'
-          mb='3'
-          _hover={{
-            transform: 'scale(1.2)',
-            color: 'gray.700',
-          }}
-        />
+        {/* Dodanie strzałki widocznej po przewinięciu */}
+        {showScrollToTop && (
+          <Icon
+            as={MdArrowUpward}
+            onClick={scrollToTop}
+            boxSize='6'
+            variant='ghost'
+            fontSize={{ base: 'large', md: 'x-large' }}
+            rounded='lg'
+            colorScheme='gray.800'
+            position='fixed'
+            bottom={4}
+            left={4}
+            zIndex={10}
+            _hover={{
+              transform: 'scale(1.2)',
+              color: 'gray.700',
+            }}
+          />
+        )}
       </Box>
     </>
   );

@@ -44,6 +44,30 @@ const Articles = () => {
     { title: 'blog.preparing_for_procedures.part6_title', content: 'blog.preparing_for_procedures.part6' },
     { title: 'blog.preparing_for_procedures.part7_title', content: 'blog.preparing_for_procedures.part7' },
   ];
+  const kobido = [
+    {
+      title: 'blog.kobido.part2_title',
+      content: [
+        'blog.kobido.part2_1',
+        'blog.kobido.part2_2',
+        'blog.kobido.part2_3',
+        'blog.kobido.part2_4',
+        'blog.kobido.part2_5',
+      ],
+    },
+    {
+      title: 'blog.kobido.part3_title',
+      content: [
+        'blog.kobido.part3_1',
+        'blog.kobido.part3_2',
+        'blog.kobido.part3_3',
+        'blog.kobido.part3_4',
+        'blog.kobido.part3_5',
+        'blog.kobido.part3_6',
+      ],
+    },
+    { title: 'blog.kobido.part4_title', content: 'blog.kobido.part4' },
+  ];
 
   const articles = [
     {
@@ -63,21 +87,18 @@ const Articles = () => {
                 {t(section.title)}
               </Text>
               {Array.isArray(section.content) ? (
-                // Jeżeli content jest tablicą, mapujemy przez nią i wyświetlamy każdy element
                 section.content.map((contentItem, idx) => (
                   <Text key={idx} fontSize='md' color='gray.700'>
-                    {t(contentItem)} {/* Tłumaczenie elementów w content */}
+                    {t(contentItem)}
                   </Text>
                 ))
               ) : (
-                // Jeżeli content nie jest tablicą, po prostu wyświetlamy tekst
                 <Text fontSize='md' color='gray.700'>
-                  {t(section.content)} {/* Tłumaczenie pojedynczego tekstu */}
+                  {t(section.content)}
                 </Text>
               )}
             </Box>
           ))}
-          
         </Stack>
       ),
     },
@@ -175,6 +196,47 @@ const Articles = () => {
 
           <Text fontSize='lg' fontWeight='medium' mb='10' color='gray.700'>
             {t('blog.preparing_for_procedures.summary')}
+          </Text>
+        </Stack>
+      ),
+    },
+    {
+      id: 5,
+      title: t('blog.kobido.kobido'),
+      date: '2025-03-12',
+      image: '/images/kobido.png',
+      video: '/images/kobido.mp4',
+      content: (
+        <Stack spacing={6} p={4} maxW='800px' mx='auto'>
+          <Text fontSize='lg' color='gray.600'>
+            {t('blog.kobido.subtitle')}
+          </Text>
+
+          <Divider />
+
+          {kobido.map((section, index) => (
+            <Box key={index}>
+              <Text fontWeight='bold' fontSize='xl' mb={2}>
+                {t(section.title)}
+              </Text>
+              {Array.isArray(section.content) ? (
+                section.content.map((contentItem, idx) => (
+                  <Text key={idx} fontSize='md' color='gray.700'>
+                    {t(contentItem)}
+                  </Text>
+                ))
+              ) : (
+                <Text fontSize='md' color='gray.700'>
+                  {t(section.content)}
+                </Text>
+              )}
+            </Box>
+          ))}
+
+          <Divider />
+
+          <Text fontSize='lg' fontWeight='medium' mb='10' color='gray.700'>
+            {t('blog.kobido.summary')}
           </Text>
         </Stack>
       ),

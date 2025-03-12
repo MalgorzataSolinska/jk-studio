@@ -23,6 +23,8 @@ const images = [
   { src: '/images/rezultatydepilacji.png', category: 'depilacja' },
   { src: '/images/rezultatydepilacji2.png', category: 'depilacja' },
   { src: '/images/Jana-certyfikaty.png', category: 'depilacja' },
+  { src: '/images/kobido.png' },
+  { src: '/images/kobido_1.png' },
 ];
 
 function Gallery() {
@@ -44,7 +46,7 @@ function Gallery() {
       <Header />
       <Box id='gallery' p='5'>
         <Heading as='h2' size='xl' mb='5' mt='15' ml='5'>
-        {t('gallery.gallery')}
+          {t('gallery.gallery')}
         </Heading>
         <Box p={5}>
           <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={5}>
