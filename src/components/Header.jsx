@@ -67,7 +67,7 @@ function Header() {
               maxW={{ base: '60', md: '180' }}
               fontSize='12'
               position='fixed'
-              top={{ base: '138px', md: '160px', lg: '180px' }}
+              top={{ base: '110',sm: '90', md: '90px', lg: '90px' }}
               right={{ base: '20px', md: '20px' }}
               opacity='0.8'
               zIndex='10'
