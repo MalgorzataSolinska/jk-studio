@@ -31,12 +31,12 @@ function About() {
         left='0'
         width='100%'
         zIndex='1000'
-        bg='gray.800' // Kolor tła, dostosuj do swojej strony
+        bg='gray.800' 
         color='white'
         p='4'
       />
-      
-      <Box id='about' p={5}>
+
+      <Box id='about' p={5} maxW='container.lg' mx='auto'>
         <Heading as='h2' size='xl' mb='5' mt='15' ml='5'>
           {t('about.aboutUs.aboutUs')}
         </Heading>
@@ -66,7 +66,7 @@ function About() {
               alt='Gabinet'
               fallback={<Skeleton />}
               maxH='500px'
-              minW={{ base: '250px', md: '350px', lg: '500px' }}
+              minW={{ base: '250px', sm: '300px', md: '350px' }}
               objectFit='cover'
               flex='2'
               height='100%'
@@ -105,10 +105,10 @@ function About() {
           >
             <Image
               src='../images/Jana-właścicielka.png'
-              alt='Gabinet'
+              alt='Jana'
               fallback={<Skeleton />}
               maxH='500px'
-              minW={{ base: '250px', md: '350px', lg: '500px' }}
+              minW={{ base: '250px', sm: '300px', md: '350px' }}
               objectFit='cover'
               flex='2'
               height='100%'

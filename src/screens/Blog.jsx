@@ -10,7 +10,7 @@ function Blog() {
   return (
     <>
       <Header />
-      <Box id='blog' p={5}>
+      <Box id='blog' p={5} maxW='container.lg' mx='auto'>
         <Heading as='h2' size='xl' mb='5' mt='15' ml='5'>
         {t('blog.blog')}
         </Heading>

@@ -10,12 +10,12 @@ function ContactInformation() {
   const { t } = useTranslation();
   return (
     <Stack
-      justifyContent={{ base: 'normal', md: 'space-around', lg: 'normal' }}
-      direction={{ base: 'column', md: 'row', lg: 'row' }}
-      spacing={{ base: '10', md: '0', lg: '0' }}
+      justifyContent={{ base: 'normal', sm:'space-between',  md: 'normal', lg: 'normal' }}
+      direction={{ base: 'column', sm: 'row', md: 'row', lg: 'row' }}
+      spacing={{ base: '10', sm: '2', md: '20', lg: '0' }}
       fontFamily='Comfortaa'
-      ml={{ base: '10', md: '4', lg: '10' }}
-      mr={{ base: '10', md: '4' }}
+       ml={{ base: '10', sm: '5',md: '10' }}
+       mr={{ base: '10', sm:'5' }}
     >
       <Stack direction='column' textColor='black' align='flex-start'>
         <Text fontSize='xl' fontWeight='bold' mb='4'>

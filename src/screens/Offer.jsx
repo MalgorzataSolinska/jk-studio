@@ -10,7 +10,7 @@ function Offer() {
     <>
       <Header />
 
-      <Box id='offer' p={5}>
+      <Box id='offer' p={5} maxW='container.lg' mx='auto'>
         <Heading as='h2' size='xl' mb='25' mt='15' ml='5'>
           {t('offer.pricing')}
         </Heading>

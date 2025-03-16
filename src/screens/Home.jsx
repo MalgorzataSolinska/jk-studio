@@ -96,7 +96,7 @@ function Home() {
               src='../images/pastacukrowa.png'
               alt='Pasta Cukrowa'
               fallback={<Skeleton />}
-              maxH='460px'
+              maxH={{base: '460px', sm: '350px', md: '460px'}}
               minW='300px'
               objectFit='cover'
               flex='1'
@@ -106,7 +106,7 @@ function Home() {
               src='../images/depilacja.png'
               alt='Depilacja'
               fallback={<Skeleton />}
-              maxH='460px'
+              maxH={{base: '460px', sm: '350px',md: '460px'}}
               objectFit='cover'
             />
           </Flex>

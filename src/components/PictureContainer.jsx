@@ -10,22 +10,14 @@ function PictureContainer({ src, onClick }) {
     <MotionBox
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
-      transition="all 0.2s ease-in-out" 
-      p='5'
-      spacing='5px'
-      w='fit-content'
-      h='fit-content'
-      borderWidth='1px'
-      rounded='lg'
-      shadow='lg'
-      position='relative'
+      transition='all 0.2s ease-in-out'
       onClick={onClick}
       cursor='pointer'
     >
       <Flex h='flex' alignSelf='center'>
         <Box>
           <Link pt='1' cursor='pointer'>
-            <Image src={src} maxH='flex' w='flex' />
+            <Image src={src} maxH='flex' shadow='lg'  w='flex' />
           </Link>
         </Box>
       </Flex>

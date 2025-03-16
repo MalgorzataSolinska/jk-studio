@@ -13,38 +13,30 @@ const Article = () => {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const videoRef = useRef(null);
-
+  const footerRef = useRef(null);
   const [showScrollToTop, setShowScrollToTop] = useState(false);
 
   useEffect(() => {
-    // Funkcja nasłuchująca przewijania strony
     const handleScroll = () => {
-      if (window.scrollY > window.innerHeight) {
-        setShowScrollToTop(true); // Pokazuje strzałkę po przewinięciu jednej wysokości okna
+      const footerPosition = footerRef.current?.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (window.scrollY > 0.5 * windowHeight && footerPosition > windowHeight) {
+        setShowScrollToTop(true);
       } else {
-        setShowScrollToTop(false); // Ukrywa strzałkę, jeśli jesteśmy na górze
+        setShowScrollToTop(false);
       }
     };
 
-    // Dodanie nasłuchiwania na scroll
     window.addEventListener('scroll', handleScroll);
-
-    // Usunięcie nasłuchiwacza po zakończeniu działania komponentu
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   useEffect(() => {
     if (!article?.video) return;
-
-    // Jeśli jest wideo, odtwarzaj je od razu
     if (videoRef.current) {
       videoRef.current.play();
-
-      // Dodaj nasłuchiwanie na zakończenie wideo
       videoRef.current.addEventListener('ended', () => {
-        // Po zakończeniu wideo, ustawiamy je na początek
         videoRef.current.currentTime = 1;
         videoRef.current.play();
       });
@@ -66,26 +58,28 @@ const Article = () => {
   return (
     <>
       <Header />
-      <Box p={5}>
+      <Box p={5} maxW='container.lg' mx='auto'>
+        {/* Przycisk powrotu */}
         <Button
           leftIcon={<Icon as={MdArrowBack} />}
           onClick={handleGoBack}
-          boxSize='6'
+          boxSize='10'
           variant='ghost'
-          fontSize={{ base: 'large', md: 'x-large' }}
+          fontSize={{ base: 'x-large', md: 'x-large' }}
           rounded='lg'
+          position="absolute"
           colorScheme='gray.800'
           mb='3'
-          _hover={{
-            transform: 'scale(1.2)',
-            color: 'gray.700',
-          }}
-        ></Button>
+          left={{base:'2', sm:'2', md: '5'}}
+          _hover={{ transform: 'scale(1.2)', color: 'gray.700' }}
+        />
 
+        {/* Tytuł artykułu */}
         <Heading as='h2' size='xl' mb='3' mt='5' textAlign='center'>
           {article.title}
         </Heading>
 
+        {/* Data artykułu */}
         <Text fontSize='sm' color='gray.600' textAlign='center' mb={4}>
           {new Date(article.date).toLocaleDateString(i18n.language, {
             weekday: 'long',
@@ -95,30 +89,31 @@ const Article = () => {
           })}
         </Text>
 
-        {/* Jeśli artykuł ma wideo, pokazujemy je, w przeciwnym razie obrazek */}
-        {article.video ? (
-          <Box
-            position='relative'
-            maxH={{ base: '300px', md: '400px' }}
-            display='flex'
-            alignItems='center'
-            justifyContent='center'
-            overflow='hidden'
-          >
-            <video
-              ref={videoRef}
-              src={article.video}
+        {/* Multimedia: Wideo lub obrazek */}
+        <Box maxW='container.lg' mx='auto' width='100%'>
+          {article.video ? (
+            <Box
+              position='relative'
+              maxH={{ base: '300px', md: '400px' }}
+              display='flex'
+              alignItems='center'
+              justifyContent='center'
+              overflow='hidden'
               width='100%'
-              height='100%'
-              style={{ objectFit: 'cover' }}
-              playsInline
-              muted
-              autoPlay
-              loop // Zapętlenie wideo
-            />
-          </Box>
-        ) : (
-          <Box align='center'>
+            >
+              <video
+                ref={videoRef}
+                src={article.video}
+                width='100%'
+                height='100%'
+                style={{ objectFit: 'cover' }}
+                playsInline
+                muted
+                autoPlay
+                loop
+              />
+            </Box>
+          ) : (
             <Image
               src={article.image}
               alt={article.title}
@@ -129,33 +124,44 @@ const Article = () => {
               shadow='lg'
               width='100%'
             />
-          </Box>
-        )}
+          )}
+        </Box>
 
-        <Stack spacing={5}>
+        {/* Treść artykułu */}
+        <Stack spacing={5} maxW='container.lg' mx='auto' width='100%'>
           <Text textAlign='justify' fontSize='md' lineHeight='1.8' color='gray.800'>
             {article.content}
           </Text>
         </Stack>
 
-        {/* Dodanie strzałki widocznej po przewinięciu */}
+    
+        <button ref={footerRef} bg='gray.50' textAlign='center'>
+          <Icon
+          
+            boxSize='6'
+            as={MdArrowUpward}
+            onClick={scrollToTop}
+            left={{base:'2', sm:'2', md: '5'}}
+            _hover={{ transform: 'scale(1.2)', color: 'gray.700' }}
+            position="absolute"
+          />
+        </button>
+
+
+        
         {showScrollToTop && (
           <Icon
             as={MdArrowUpward}
             onClick={scrollToTop}
             boxSize='6'
             variant='ghost'
-            fontSize={{ base: 'large', md: 'x-large' }}
             rounded='lg'
             colorScheme='gray.800'
             position='fixed'
-            bottom={4}
-            left={4}
+            bottom='4'
+            left={{base:'2', sm:'2', md: '5'}}
             zIndex={10}
-            _hover={{
-              transform: 'scale(1.2)',
-              color: 'gray.700',
-            }}
+            _hover={{ transform: 'scale(1.2)', color: 'gray.700' }}
           />
         )}
       </Box>

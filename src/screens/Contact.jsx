@@ -27,6 +27,7 @@ function Contact() {
   return (
     <>
       <Header />
+      <Box maxW='container.lg' mx='auto'>
       <Box id='contact' p={5}>
         <Heading as='h2' size='xl' mb='5' mt='15' ml='5'>
           {t('contact.contact')}
@@ -55,7 +56,7 @@ function Contact() {
                 fallback={<Skeleton />}
                 objectFit='cover'
                 maxH={{ base: 'auto', md: '700' }}
-                width={{ md: '100%', lg: '80%' }}
+                width={{ md: '100%' }}
                 boxShadow='xl'
                 rounded='20'
               />
@@ -67,6 +68,7 @@ function Contact() {
             )}
           </div>
         </Link>
+      </Box>
       </Box>
     </>
   );

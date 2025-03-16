@@ -11,7 +11,7 @@ function Footer() {
       <Flex ml='4' justifyContent='space-between' alignItems='center' mt='2'>
         <Text fontSize='smaller' color='gray.900'>
           COPYRIGHT &copy; {new Date().getFullYear()} Created by {' '}
-          <Link href='https://github.com/MalgorzataSolinska' textDecor='underline' color='gray.700' isExternal>
+          <Link href='https://github.com/MalgorzataSolinska' textDecor='underline'  target='_blank' color='gray.700' isExternal>
             MalgorzataSolinska{' '}
           </Link>
         </Text>

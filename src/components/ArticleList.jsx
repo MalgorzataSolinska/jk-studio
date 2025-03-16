@@ -10,7 +10,7 @@ const ArticleList = () => {
   const articles = Articles();
   return (
     <Box p={5}>
-      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={5}>
+      <SimpleGrid columns={{ base: 1, sm: 2, md: 2, lg: 3 }} spacing={3} >
         {articles
           .slice()
           .reverse()
@@ -21,21 +21,19 @@ const ArticleList = () => {
               key={article.id}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              transition="all 0.2s ease-in-out" 
-              p='5'
+              transition='all 0.2s ease-in-out'
+              p='2'
               spacing='5px'
-              borderWidth='1px'
-              rounded='lg'
               shadow='lg'
               position='relative'
               cursor='pointer'
-              w='fit-content'
+              maxW='400px'
               h='fit-content'
             >
               <Flex>
                 <Box>
                   <Link pt='1' cursor='pointer'>
-                    <Image src={article.image} alt={article.title} alignSelf='center' />
+                    <Image src={article.image}  shadow='lg' alt={article.title} alignSelf='center' />
                   </Link>
                 </Box>
               </Flex>

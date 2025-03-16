@@ -44,12 +44,12 @@ function Gallery() {
   return (
     <>
       <Header />
-      <Box id='gallery' p='5'>
+      <Box id='gallery' p='5' maxW='container.lg' mx='auto'>
         <Heading as='h2' size='xl' mb='5' mt='15' ml='5'>
           {t('gallery.gallery')}
         </Heading>
         <Box p={5}>
-          <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={5}>
+          <SimpleGrid columns={{ base: 1, sm: 2, md: 2, lg: 3 }} spacing={5}>
             {images.map((image, index) => (
               <PictureContainer key={index} src={image.src} onClick={() => openLightbox(index)} />
             ))}
