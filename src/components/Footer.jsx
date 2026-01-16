@@ -12,7 +12,7 @@ function Footer() {
         <Text fontSize='smaller' color='gray.900'>
           COPYRIGHT &copy; {new Date().getFullYear()} Created by {' '}
           <Link href='https://github.com/MalgorzataSolinska' textDecor='underline'  target='_blank' color='gray.700' isExternal>
-            MalgorzataSolinska{' '}
+            MS{' '}
           </Link>
         </Text>
       </Flex>

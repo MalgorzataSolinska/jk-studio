@@ -148,9 +148,10 @@ function Offer() {
                 <Table variant='simple' size={{ base: 'sm', md: 'md', lg: 'md' }}>
                   <Tbody>
                     {[
-                      {service: t('offer.relaxingMassages.kobido'), time: '60 min', price: '120 PLN'},
-                      { service: t("offer.relaxingMassages.fullBodyMassage1h"), time: '60 min', price: '150 PLN' },
+                      {service: t('offer.relaxingMassages.kobido'), time: '60 min', price: '140 PLN'},
+                      { service: t("offer.relaxingMassages.fullBodyMassage1h"), time: '60 min', price: '170 PLN' },
                       { service: t('offer.relaxingMassages.fullBodyMassage1.5h'), time: '90 min', price: '200 PLN' },
+                      { service: t('offer.relaxingMassages.massageForTwo'), time: '90 min', price: '400 PLN' },
                       { service: t('offer.relaxingMassages.backMassage'), time: '30 min', price: '80 PLN' },
                       { service: t('offer.relaxingMassages.backAndLegMassage'), time: '60 min', price: '150 PLN' },
                       { service: t('offer.relaxingMassages.legMassage'), time: '40 min', price: '90 PLN' },
