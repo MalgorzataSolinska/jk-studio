@@ -68,7 +68,7 @@
     "fullBodyScrub": "Full-Body Scrub",
     "handScrub": "Hand Scrub",
     "handAndArmScrub": "Hand and Forearm Scrub",
-    "relaxingMassage": "Relaxing Massages",
+    "relaxingMassage": "Massages",
     "relaxingMassages": {
       "massageForTwo": "Massage For Two",
       "fullBodyMassage1h": "Full-Body Massage",
@@ -78,7 +78,12 @@
       "legMassage": "Leg Massage",
       "footMassage": "Foot Massage",
       "handMassage": "Hand Massage",
-      "kobido": "Kobido - Japanese facial massage"
+      "kobido": "Kobido - Japanese facial massage",
+      "lomiLomi": "Hawaiian Lomi Lomi Massage",
+      "maderotherapy": "Maderotherapy (Wood Therapy)",
+      "partialLymphaticDrainage": "Partial Lymphatic Drainage (Abdomen & Legs)",
+      "lymphaticDrainage": "Lymphatic Drainage",
+      "footReflexology": "Foot Reflexology"
     }
   },
   "gallery": {

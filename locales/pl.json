@@ -65,7 +65,7 @@
     "fullBodyScrub": "Peeling całego ciała",
     "handScrub": "Peeling dłoni",
     "handAndArmScrub": "Peeling dłoni i przedramion",
-    "relaxingMassage": "Masaże relaksacyjne",
+    "relaxingMassage": "Masaże",
     "relaxingMassages": {
       "massageForTwo": "Masaż dla dwojga",
       "fullBodyMassage1h": "Masaż całego ciała",
@@ -75,7 +75,12 @@
       "legMassage": "Masaż kończyn dolnych",
       "footMassage": "Masaż stóp",
       "handMassage": "Masaż dłoni",
-      "kobido": "Kobido - japoński masaż twarzy"
+      "kobido": "Kobido - japoński masaż twarzy",
+      "lomiLomi": "Hawajski masaż Lomi Lomi",
+      "maderotherapy": "Maderomasaż",
+      "partialLymphaticDrainage": "Drenaż limfatyczny częściowy (brzuch i nogi)",
+      "lymphaticDrainage": "Drenaż lifatyczny",
+      "footReflexology": "Refleksologia stóp"
     }
   },
   "gallery": {
