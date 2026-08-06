@@ -15,8 +15,64 @@ function Offer() {
           {t('offer.pricing')}
         </Heading>
 
+            {/* Rozwijana sekcja Massage  */}
+            <Accordion allowToggle border='white' mt='1' >
+          <AccordionItem>
+            <h2>
+              <AccordionButton _hover={{ bg: "#e1d8ec", transform: "scale(1.01)" }} _expanded={{ bg: "#e1d8ec" }} bg='#f0ecf5' rounded='lg' boxShadow='lg' transition="all 0.20s ease-in-out">
+                <Box flex='1' textAlign='left' fontWeight='bold'  color='gray.800' p={4} fontSize={{base:'medium', md:'large', lg:'larger'}}>
+                  {t('offer.relaxingMassage')}
+                </Box>
+                <AccordionIcon />
+              </AccordionButton>
+            </h2>
+            <AccordionPanel pb={4}>
+              <TableContainer mt={4}>
+                <Table variant='simple' size={{ base: 'sm', md: 'md', lg: 'md' }}>
+                  <Tbody>
+                    {[
+                      {service: t('offer.relaxingMassages.kobido'), time: '60 min', price: '150 PLN'},
+                      {service: t('offer.relaxingMassages.kobido'), time: '90 min', price: '220 PLN'},
+                      { service: t("offer.relaxingMassages.fullBodyMassage1h"), time: '60 min', price: '200 PLN' },
+                      { service: t('offer.relaxingMassages.fullBodyMassage1.5h'), time: '90 min', price: '300 PLN' },
+                      { service: t('offer.relaxingMassages.massageForTwo'), time: '60 min', price: '360 PLN' },
+                      { service: t('offer.relaxingMassages.massageForTwo'), time: '90 min', price: '500 PLN' },
+                      { service: t('offer.relaxingMassages.backMassage'), time: '30 min', price: '100 PLN' },
+                      { service: t('offer.relaxingMassages.backMassage'), time: '45 min', price: '130 PLN' },
+                      { service: t('offer.relaxingMassages.backAndLegMassage'), time: '60 min', price: '200 PLN' },
+                      { service: t('offer.relaxingMassages.legMassage'), time: '40 min', price: '120 PLN' },
+                      { service: t('offer.relaxingMassages.footMassage'), time: '30 min', price: '100 PLN' },
+                      { service: t('offer.relaxingMassages.handMassage'), time: '15 min', price: '50 PLN' },
+                      { service: t('offer.relaxingMassages.lomiLomi'), time:'60 min', price: '250 PLN'}, 
+                      { service: t('offer.relaxingMassages.lomiLomi'), time:'90 min', price: '300 PLN'}, 
+                      { service: t('offer.relaxingMassages.maderotherapy'), time:'60 min', price: '200 PLN'}, 
+                      { service: t('offer.relaxingMassages.partialLymphaticDrainage'), time:'60 min', price: '200 PLN'},
+                      { service: t('offer.relaxingMassages.lymphaticDrainage'), time:'90 min', price: '300 PLN'},
+                      { service: t('offer.relaxingMassages.footReflexology'), time:'30 min', price: '130 PLN'},
+                      { service: t('offer.relaxingMassages.footReflexology'), time:'60 min', price: '200 PLN'}
+
+                    ].map((item, index) => (
+                      <AnimatedTableRow key={index}>
+                        <Td textAlign='left' whiteSpace="normal" fontSize='md'>
+                          {item.service}
+                        </Td>
+                        <Td textAlign='right' fontSize='md'>
+                          {item.time}
+                        </Td>
+                        <Td textAlign='right' fontSize='md'>
+                          {item.price}
+                        </Td>
+                    </AnimatedTableRow>
+                    ))}
+                  </Tbody>
+                </Table>
+              </TableContainer>
+            </AccordionPanel>
+          </AccordionItem>
+        </Accordion>
+
         {/* Rozwijana sekcja Sugaring */}
-        <Accordion allowToggle border='white'>
+        <Accordion allowToggle border='white' mt='1' >
           <AccordionItem>
             <h2>
               <AccordionButton _hover={{ bg: "#e1d8ec", transform: "scale(1.01)"  }} _expanded={{ bg: "#e1d8ec" }} bg='#f0ecf5' rounded='lg'  boxShadow='lg' transition="all 0.2s ease-in-out"  >
@@ -94,7 +150,7 @@ function Offer() {
         </Accordion>
 
         {/* Rozwijana sekcja Scrub */}
-        <Accordion allowToggle border='white'mt='1'>
+        <Accordion allowToggle border='white'mt='1'mb='10'>
           <AccordionItem>
             <h2>
               <AccordionButton _hover={{ bg: "#e1d8ec", transform: "scale(1.01)" }} _expanded={{ bg: "#e1d8ec" }} bg='#f0ecf5' rounded='lg' boxShadow='lg' transition="all 0.2s ease-in-out">
@@ -112,62 +168,6 @@ function Offer() {
                       { service: t("offer.fullBodyScrub"), time: '60 min', price: '200 PLN' },
                       { service: t('offer.handScrub'), time: '20 min', price: '35 PLN' },
                       { service: t('offer.handAndArmScrub'), time: '30 min', price: '50 PLN' },
-                    ].map((item, index) => (
-                      <AnimatedTableRow key={index}>
-                        <Td textAlign='left' whiteSpace="normal" fontSize='md'>
-                          {item.service}
-                        </Td>
-                        <Td textAlign='right' fontSize='md'>
-                          {item.time}
-                        </Td>
-                        <Td textAlign='right' fontSize='md'>
-                          {item.price}
-                        </Td>
-                    </AnimatedTableRow>
-                    ))}
-                  </Tbody>
-                </Table>
-              </TableContainer>
-            </AccordionPanel>
-          </AccordionItem>
-        </Accordion>
-
-        {/* Rozwijana sekcja Massage  */}
-        <Accordion allowToggle border='white' mt='1' mb='10'>
-          <AccordionItem>
-            <h2>
-              <AccordionButton _hover={{ bg: "#e1d8ec", transform: "scale(1.01)" }} _expanded={{ bg: "#e1d8ec" }} bg='#f0ecf5' rounded='lg' boxShadow='lg' transition="all 0.20s ease-in-out">
-                <Box flex='1' textAlign='left' fontWeight='bold'  color='gray.800' p={4} fontSize={{base:'medium', md:'large', lg:'larger'}}>
-                  {t('offer.relaxingMassage')}
-                </Box>
-                <AccordionIcon />
-              </AccordionButton>
-            </h2>
-            <AccordionPanel pb={4}>
-              <TableContainer mt={4}>
-                <Table variant='simple' size={{ base: 'sm', md: 'md', lg: 'md' }}>
-                  <Tbody>
-                    {[
-                      {service: t('offer.relaxingMassages.kobido'), time: '60 min', price: '150 PLN'},
-                      {service: t('offer.relaxingMassages.kobido'), time: '90 min', price: '220 PLN'},
-                      { service: t("offer.relaxingMassages.fullBodyMassage1h"), time: '60 min', price: '200 PLN' },
-                      { service: t('offer.relaxingMassages.fullBodyMassage1.5h'), time: '90 min', price: '300 PLN' },
-                      { service: t('offer.relaxingMassages.massageForTwo'), time: '60 min', price: '360 PLN' },
-                      { service: t('offer.relaxingMassages.massageForTwo'), time: '90 min', price: '500 PLN' },
-                      { service: t('offer.relaxingMassages.backMassage'), time: '30 min', price: '100 PLN' },
-                      { service: t('offer.relaxingMassages.backMassage'), time: '45 min', price: '130 PLN' },
-                      { service: t('offer.relaxingMassages.backAndLegMassage'), time: '60 min', price: '200 PLN' },
-                      { service: t('offer.relaxingMassages.legMassage'), time: '40 min', price: '120 PLN' },
-                      { service: t('offer.relaxingMassages.footMassage'), time: '30 min', price: '100 PLN' },
-                      { service: t('offer.relaxingMassages.handMassage'), time: '15 min', price: '50 PLN' },
-                      { service: t('offer.relaxingMassages.lomiLomi'), time:'60 min', price: '250 PLN'}, 
-                      { service: t('offer.relaxingMassages.lomiLomi'), time:'90 min', price: '300 PLN'}, 
-                      { service: t('offer.relaxingMassages.maderotherapy'), time:'60 min', price: '200 PLN'}, 
-                      { service: t('offer.relaxingMassages.partialLymphaticDrainage'), time:'60 min', price: '200 PLN'},
-                      { service: t('offer.relaxingMassages.lymphaticDrainage'), time:'90 min', price: '300 PLN'},
-                      { service: t('offer.relaxingMassages.footReflexology'), time:'30 min', price: '130 PLN'},
-                      { service: t('offer.relaxingMassages.footReflexology'), time:'60 min', price: '200 PLN'}
-
                     ].map((item, index) => (
                       <AnimatedTableRow key={index}>
                         <Td textAlign='left' whiteSpace="normal" fontSize='md'>
